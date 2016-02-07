@@ -8,46 +8,47 @@
 \BOOKMARK [1][-]{section.2.3}{Resoruce Description Framework}{chapter.2}% 8
 \BOOKMARK [1][-]{section.2.4}{OWL}{chapter.2}% 9
 \BOOKMARK [1][-]{section.2.5}{SPARQL}{chapter.2}% 10
-\BOOKMARK [0][-]{chapter.3}{Real Food Trade}{}% 11
+\BOOKMARK [0][-]{chapter.3}{Il caso di studio : RFT}{}% 11
 \BOOKMARK [1][-]{section.3.1}{Utenti}{chapter.3}% 12
 \BOOKMARK [1][-]{section.3.2}{Definizioni}{chapter.3}% 13
 \BOOKMARK [1][-]{section.3.3}{Funzionalit\340}{chapter.3}% 14
 \BOOKMARK [1][-]{section.3.4}{Lo scenario Cileno}{chapter.3}% 15
-\BOOKMARK [0][-]{chapter.4}{Progettazione del prototipo}{}% 16
-\BOOKMARK [1][-]{section.4.1}{Funzionalit\340 implementate}{chapter.4}% 17
-\BOOKMARK [1][-]{section.4.2}{Modello dei dati}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.3}{Casi d'uso}{chapter.4}% 19
-\BOOKMARK [0][-]{chapter.5}{Modello semantico dei dati}{}% 20
-\BOOKMARK [1][-]{section.5.1}{Dataset di partenza}{chapter.5}% 21
-\BOOKMARK [2][-]{subsection.5.1.1}{Tassonomia ASFIS-FAO}{section.5.1}% 22
-\BOOKMARK [2][-]{subsection.5.1.2}{DBpedia}{section.5.1}% 23
-\BOOKMARK [1][-]{section.5.2}{Indice delle specie}{chapter.5}% 24
-\BOOKMARK [2][-]{subsection.5.2.1}{Informazioni rappresentate}{section.5.2}% 25
-\BOOKMARK [0][-]{chapter.6}{Ricerca per nome}{}% 26
-\BOOKMARK [1][-]{section.6.1}{Similarit\340 tra stringhe}{chapter.6}% 27
-\BOOKMARK [1][-]{section.6.2}{Algoritmo}{chapter.6}% 28
-\BOOKMARK [0][-]{chapter.7}{Ricerca per similarit\340}{}% 29
-\BOOKMARK [1][-]{section.7.1}{Vector Space Model}{chapter.7}% 30
-\BOOKMARK [2][-]{subsection.7.1.1}{Algoritmo originale}{section.7.1}% 31
-\BOOKMARK [2][-]{subsection.7.1.2}{Adattamenti}{section.7.1}% 32
-\BOOKMARK [1][-]{section.7.2}{Risultati sperimentali}{chapter.7}% 33
-\BOOKMARK [2][-]{subsection.7.2.1}{Riordinamento dei risultati}{section.7.2}% 34
-\BOOKMARK [2][-]{subsection.7.2.2}{Indipendenza dalla tassonomia}{section.7.2}% 35
-\BOOKMARK [2][-]{subsection.7.2.3}{Indipendeza dalla sintassi}{section.7.2}% 36
-\BOOKMARK [2][-]{subsection.7.2.4}{Conclusioni}{section.7.2}% 37
-\BOOKMARK [0][-]{chapter.8}{Implementazione}{}% 38
-\BOOKMARK [1][-]{section.8.1}{Back End}{chapter.8}% 39
-\BOOKMARK [2][-]{subsection.8.1.1}{Architettura REST}{section.8.1}% 40
-\BOOKMARK [2][-]{subsection.8.1.2}{JAX-RS}{section.8.1}% 41
-\BOOKMARK [2][-]{subsection.8.1.3}{Operazioni CRUD}{section.8.1}% 42
-\BOOKMARK [2][-]{subsection.8.1.4}{Individuazione delle Risorse}{section.8.1}% 43
-\BOOKMARK [2][-]{subsection.8.1.5}{API Rest}{section.8.1}% 44
-\BOOKMARK [2][-]{subsection.8.1.6}{Sicurezza}{section.8.1}% 45
-\BOOKMARK [2][-]{subsection.8.1.7}{Esempi di richieste}{section.8.1}% 46
-\BOOKMARK [1][-]{section.8.2}{Front End}{chapter.8}% 47
-\BOOKMARK [0][-]{chapter.9}{Sviluppi Futuri}{}% 48
-\BOOKMARK [1][-]{section.9.1}{Ricerche geografiche}{chapter.9}% 49
-\BOOKMARK [1][-]{section.9.2}{Gestione degli ordini}{chapter.9}% 50
-\BOOKMARK [1][-]{section.9.3}{Integrazione col Deep Web}{chapter.9}% 51
-\BOOKMARK [1][-]{section.9.4}{OAuth}{chapter.9}% 52
-\BOOKMARK [1][-]{section.9.5}{Estensione generale}{chapter.9}% 53
+\BOOKMARK [1][-]{section.3.5}{Prototipo}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.5.1}{Funzionalit\340 implementate}{section.3.5}% 17
+\BOOKMARK [2][-]{subsection.3.5.2}{Casi d'uso}{section.3.5}% 18
+\BOOKMARK [0][-]{chapter.4}{Progettazione del prototipo}{}% 19
+\BOOKMARK [1][-]{section.4.1}{Modello dei dati}{chapter.4}% 20
+\BOOKMARK [0][-]{chapter.5}{Modello semantico dei dati}{}% 21
+\BOOKMARK [1][-]{section.5.1}{Dataset di partenza}{chapter.5}% 22
+\BOOKMARK [2][-]{subsection.5.1.1}{Tassonomia ASFIS-FAO}{section.5.1}% 23
+\BOOKMARK [2][-]{subsection.5.1.2}{DBpedia}{section.5.1}% 24
+\BOOKMARK [1][-]{section.5.2}{Indice delle specie}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.2.1}{Informazioni rappresentate}{section.5.2}% 26
+\BOOKMARK [0][-]{chapter.6}{Ricerca per nome}{}% 27
+\BOOKMARK [1][-]{section.6.1}{Similarit\340 tra stringhe}{chapter.6}% 28
+\BOOKMARK [1][-]{section.6.2}{Algoritmo}{chapter.6}% 29
+\BOOKMARK [0][-]{chapter.7}{Ricerca per similarit\340}{}% 30
+\BOOKMARK [1][-]{section.7.1}{Vector Space Model}{chapter.7}% 31
+\BOOKMARK [2][-]{subsection.7.1.1}{Algoritmo originale}{section.7.1}% 32
+\BOOKMARK [2][-]{subsection.7.1.2}{Adattamenti}{section.7.1}% 33
+\BOOKMARK [1][-]{section.7.2}{Risultati sperimentali}{chapter.7}% 34
+\BOOKMARK [2][-]{subsection.7.2.1}{Riordinamento dei risultati}{section.7.2}% 35
+\BOOKMARK [2][-]{subsection.7.2.2}{Indipendenza dalla tassonomia}{section.7.2}% 36
+\BOOKMARK [2][-]{subsection.7.2.3}{Indipendeza dalla sintassi}{section.7.2}% 37
+\BOOKMARK [2][-]{subsection.7.2.4}{Conclusioni}{section.7.2}% 38
+\BOOKMARK [0][-]{chapter.8}{Implementazione}{}% 39
+\BOOKMARK [1][-]{section.8.1}{Back End}{chapter.8}% 40
+\BOOKMARK [2][-]{subsection.8.1.1}{Architettura REST}{section.8.1}% 41
+\BOOKMARK [2][-]{subsection.8.1.2}{JAX-RS}{section.8.1}% 42
+\BOOKMARK [2][-]{subsection.8.1.3}{Operazioni CRUD}{section.8.1}% 43
+\BOOKMARK [2][-]{subsection.8.1.4}{Individuazione delle Risorse}{section.8.1}% 44
+\BOOKMARK [2][-]{subsection.8.1.5}{API Rest}{section.8.1}% 45
+\BOOKMARK [2][-]{subsection.8.1.6}{Sicurezza}{section.8.1}% 46
+\BOOKMARK [2][-]{subsection.8.1.7}{Esempi di richieste}{section.8.1}% 47
+\BOOKMARK [1][-]{section.8.2}{Front End}{chapter.8}% 48
+\BOOKMARK [0][-]{chapter.9}{Sviluppi Futuri}{}% 49
+\BOOKMARK [1][-]{section.9.1}{Ricerche geografiche}{chapter.9}% 50
+\BOOKMARK [1][-]{section.9.2}{Gestione degli ordini}{chapter.9}% 51
+\BOOKMARK [1][-]{section.9.3}{Integrazione col Deep Web}{chapter.9}% 52
+\BOOKMARK [1][-]{section.9.4}{OAuth}{chapter.9}% 53
+\BOOKMARK [1][-]{section.9.5}{Estensione generale}{chapter.9}% 54

@@ -295,14 +295,14 @@ abc:isInContinent abc:Africa .\\
 \}
  }
 
-\chapter{Real Food Trade}
+\chapter{Il caso di studio : RFT}
 Il sistema del caso di studio prende il nome di \textbf{Real Food Trade} (\textbf{RFT}).
 RFT consente ai pescatori di vendere i propri prodotti direttamente al consumatore finale,  tramite la pubblicazione di mercati temporanei.
 Questi mercati temporanei rappresentano dei punti di incontro, identificati da un orario ed un luogo nello spazio, tra produttore e consumatore che rendono possibile la vendita diretta. 
 Questo sistema è stato progettato ed implementato nelle tesi dei dottori L. Menichetti, L. Nardini, M. Ungania (Università degli Studi Roma Tre).
 
 L'obbiettivo della presente tesi è quello di sfruttare i Linked Data per creare tecniche di ricerca semantica nel contesto di Real Food Trade. \`E stato dunque necessario studiare il sistema preesistente prima di creare il nuovo prototipo che ne rappresenta una porzione limitata al settore di interesse.
-In questo capitolo sono descritte le funzionalità e i requisiti del sistema completo.
+In questo capitolo sono descritte le funzionalità e i requisiti del sistema completo ed in seguito le funzionalità e le scelte progettuali adottate per la realizzazione del prototipo. Si è cercato di mantenere una continuità con la nomenclautra adottata nei lavori precedenti.
 \section{Utenti}
 Segue una lista degli attori che svolgono funzioni nel sistema.
 \begin{itemize}
@@ -321,7 +321,7 @@ Segue una lista di definizioni che descrivono gli oggetti modellati dal sistema.
 \item \textbf{Feedback} \`E una votazione che \textit{Seller} e \textit{Customer} si danno reciprocamente, dopo la conclusione, ovvero il ritiro e pagamento, di un \textit{Order}.
 \end{itemize}
 \section{Funzionalità}
-In questa sezione illustriamo le principali funzionalità del sistema finale.
+In questa sezione illustriamo le principali funzionalità del sistema completo.
 \subsection*{Pubblicazione di un Flash Stand}
 Un \textit{Seller} può pubblicare un \textit{Flash Stand}, ovvero un proprio mercato temporaneo indicandone l'orario di validità e la posizione geografica. Un \textit{Flash Stand} può essere associato dal \textit{Seller} proprietario ad un \textit{Flash Market}.
 
@@ -365,16 +365,91 @@ Vendendo direttamente al cliente, RFT elimina la figura del grossista, o almeno 
 
 Va chiarito che l'intenzione di RFT non è quella di eliminare definitivamente ogni forma di intermediazione. A questo proposito, infatti va evidenziato come l'utente \textit{Seller} sia un estensione dell'utente \textit{Customer}. Questo significa che un venditore può acquistare, e quindi rivendere successivamente, prodotti da altri venditori della comunità RFT. Entrando in un mercato come quello del caso Cileno, RFT avrà potenzialmente la capacità di eliminare l'intermediazione senza valore aggiunto, ovvero quella rappresentata da figure che si garantiscono un costo di acquisto alla fonte favorevole, grazie a posizioni di privilegio. Questi intermediari, rivendendo ai dettaglianti, detengono la maggior parte dei guadagni del mercato in questione, senza aver aggiunto valore alla merce, come può fare invece un intermediario che rivende in una zona diversa, assumendosi il costo del trasporto.
 RFT propone nuovi canali di vendita più convenienti ai produttori, limitando quindi la posizione di privilegio detenuta dai grossisti.
-\chapter{Progettazione del prototipo}
-Il lavoro della presente tesi non è rivolto all'implementazione dell'intero sistema RFT, bensì delle tecniche di ricerca semantica coinvolte. Per questo motivo si rende necessario un prototipo che copra le funzionalità minime, necessarie allo sviluppo di queste tecniche.
-
-In questo capitolo mostrermo le scelte progettuali adottate nello sviluppo del prototipo di Real Food Trade. Estendendo poi il prototipo si potrà giungere ad una versione completa del sistema, così come definito nel capitolo precedente.
-\section{Funzionalità implementate}
+\section{Prototipo}
+In questa sezione mostriamo le funzionalità minime implementate nella progettazione del prototipo e i casi d'uso individuati. Estendendo poi il prototipo si potrà giungere ad una versione completa del sistema, così come definita nel presente capitolo.
+\subsection{Funzionalità implementate}
 Il sistema si appoggia su una tassonomia delle specie ittiche, la cui architettura viene descritta nel prossimo capitolo. Questa tassonomia è l'oggetto di riferimento per la ricerca semantica.
 
 La funzione di ricerca si rende necessaria durante diverse operazioni. Quando un venditore inserisce un prodotto, deve specificare a quale specie appartiene, in questo modo i clienti possono raggiungere un prodotto indicando una specie della tassonomia. Gli utenti indicano una specie, passando dalla ricerca semantica. Emerge come sia necessario implementare le funzionalità di inserimento e gestione dei \textit{Flash Stand} e \textit{Stand Product} da parte dei \textit{Seller} e di ricerca di questi da parte dei \textit{Customer}.
 
 Ovviamente nasce l'esigenza di differenziare l'esperienza utente sulla base del ruolo. Vengono quindi implementate funzioni base di registrazione ed autenticazione. Gli utenti sono quelli definiti nel capitolo precedente, ai fini del prototipo l'utente \textit{Admin} non compare come attore di alcuna attività.
+\subsection{Casi d'uso}
+Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzionalità di RFT. Di seguito sono riportati i casi d'uso individuati necessari all'implementazionde delle funzionalità minime necessarie.
+\paragraph{Registrazione}Un nuovo utente si registra nel sistema come \textit{Seller} o \textit{Customer}. \\ 
+\begin{tabular}{|l|p{4in}|}
+\hline Pre-condizioni & L'utente non è loggato. \\ 
+\hline Post-condizioni & Il nuovo utente viene inserito nel sistema. \\ 
+\hline Scenario principale & 	\begin{enumerate}
+		\item L'utente indica che vuole registrarsi.
+		\item Il sistema chiede l'inserimento di:
+			\begin{itemize}
+				\item username;
+				\item password;
+				\item email;
+			\end{itemize}
+		\item Il sistema chiede di indicare il ruolo (\textit{Seller} o \textit{Customer}).
+		\item L'utente conferma la registrazione.
+	\end{enumerate}  \\ 
+\hline 
+\end{tabular} 
+
+\paragraph*{Login}Un utente si autentica nel sistema.\\
+\begin{tabular}{|l|p{4in}|}
+\hline Pre-condizioni & L'utente è registrato. \\ 
+\hline Post-condizioni & L'utente è autenticato. \\ 
+\hline Scenario principale & 	\begin{enumerate}
+		\item L'utente indica che vuole effettuare il login.
+		\item Il sistema chiede l'inserimento di username e password.
+		\item L'utente conferma il login.
+	\end{enumerate} \\ 
+\hline 
+\end{tabular}
+\paragraph{Creazione di un nuovo Flash Stand} Un utente \textit{Seller} inserisce un nuovo \textit{Flash Stand} nel sistema.\\
+\begin{tabular}{|l|p{4in}|}
+\hline Pre-condizioni &  L'utente è loggato come \textit{Seller}. \\ 
+\hline Post-condizioni & Un \textit{Flash Stand} è stato correttamente inserito nel sistema. \\ 
+\hline Scenario principale & \begin{enumerate}
+	\item Il \textit{Seller} indica che vuole creare un nuovo \textit{Flash Stand}.
+	\item Il sistema chiede l'inserimento di:
+		\begin{itemize}
+			\item latitudine e longitudine;
+			\item data e ora di inizio e di fine.
+		\end{itemize}
+	\item Il \textit{Seller} conferma la creazione del FS.
+\end{enumerate} \\ 
+\hline 
+\end{tabular}
+
+\paragraph{Aggiunta di un nuovo Stand Product}  Un utente \textit{Seller} pubblica un nuovo \textit{Stand Product} in un proprio \textit{Flash Stand}.\\
+\begin{tabular}{|l|p{4in}|}
+\hline Pre-condizioni &  L'utente è loggato come \textit{Seller}. L'utente ha almeno un FS attivo. \\ 
+\hline Post-condizioni & Il nuovo SP è correttamente inserito nel FS specificato. \\ 
+\hline Scenario principale & 	\begin{enumerate}
+		\item Il \textit{Seller} seleziona il \textit{Flash Stand} al quale vuole aggiungere uno \textit{Stand Product}.
+		\item Il \textit{Seller} indica che vuole inserire un nuovo \textit{Stand Product}.
+		\item Il sistema chiede all'utente di indicare una specie ittica dalla tassonomia.
+		\item Il sistema chiede l'inserimento di quantità e prezzo.
+		\item Il \textit{Seller} conferma l'inserimento di uno SP.
+	\end{enumerate} \\ 
+\hline 
+\end{tabular}
+
+\paragraph{Ricerca di un Flash Stand} Un utente (tipicamente un \textit{Customer}, ma potrebbe essere anche un \textit{Seller}) cerca un FS che venda un certo prodotto.\\
+\begin{tabular}{|l|p{4in}|}
+\hline Pre-condizioni & Nel sistema sono presenti FS attivi con SP inseriti. \\ 
+\hline Post-condizioni & Nessuna.\\ 
+\hline Scenario principale & \begin{enumerate}
+		\item L'utente indica la volontà di cercare un prodotto.
+		\item Il sistema chiede all'utente di indicare una specie ittica presente nella tassonomia.
+		\item Il sistema mostra gli SP che fanno riferimento a quella specie ed alle specie simili.
+		\item L'utente seleziona uno SP e vengono visualizzati i dettagli dello stesso e del FS di appartenenza.
+	\end{enumerate} \\ 
+\hline 
+\end{tabular}
+	
+\chapter{Progettazione del prototipo}
+
+
 \section{Modello dei dati}
 Segue il modello dei dati che modellizza le entità coinvolte dalle funzionalità implementate nel prototipo.
 \begin{figure}[H]
@@ -400,76 +475,7 @@ Ogni prodotto deve avere un \textit{prezzo}, specificato nella quantità di misur
 Rappresenta una specie nella tassonomia di riferimento. \`E l'entità che crea un collegamento tra una precisa specie ittica e un prodotto pubblicato su RFT.
 \subsection*{User}
 Entità che modellizza gli utenti di RFT. Le categorie di utenti sono quelle già definite nella descrizione del sistema completo: \textit{Admin}, \textit{Seller}, \textit{Customer}.
-\section{Casi d'uso}
-\subsection*{Registrazione}
-\paragraph{Descrizione :}
-Un nuovo utente si registra nel sistema come \textit{Seller} o \textit{Customer}.
-\paragraph{Pre-condizioni :}
-L'utente non è loggato.
-\paragraph{Post-condizioni :}
-Il nuovo utente viene inserito nel sistema.
-\paragraph{Scenario principale :}
-	\begin{enumerate}
-		\item L'utente indica che vuole registrarsi.
-		\item Il sistema chiede l'inserimento di:
-			\begin{itemize}
-				\item username;
-				\item password;
-				\item email;
-			\end{itemize}
-		\item Il sistema chiede di indicare il ruolo (\textit{Seller} o \textit{Customer}).
-		\item L'utente conferma la registrazione.
-	\end{enumerate}
-\subsection*{Login}
-\paragraph{Descrizione :}
-Un utente si autentica nel sistema.
-\paragraph{Pre-condizioni :}
-L'utente è registrato.
-\paragraph{Post-condizioni :}
-L'utente è autenticato.
-\paragraph{Scenario principale :}
-	\begin{enumerate}
-		\item L'utente indica che vuole effettuare il login.
-		\item Il sistema chiede l'inserimento di username e password.
-		\item L'utente conferma il login.
-	\end{enumerate}
-\subsection*{Creazione di un nuovo Flash Stand}
-\paragraph{Descrizione :} Un utente \textit{Seller} inserisce un nuovo \textit{Flash Stand} nel sistema.
-\paragraph{Pre-condizioni :} L'utente è loggato come \textit{Seller}.
-\paragraph{Post-condizioni :} Un \textit{Flash Stand} è stato correttamente inserito nel sistema.
-\paragraph{Scenario principale :}
-\begin{enumerate}
-	\item Il \textit{Seller} indica che vuole creare un nuovo \textit{Flash Stand}.
-	\item Il sistema chiede l'inserimento di:
-		\begin{itemize}
-			\item latitudine e longitudine;
-			\item data e ora di inizio e di fine.
-		\end{itemize}
-	\item Il \textit{Seller} conferma la creazione del FS.
-\end{enumerate}
-\subsection*{Aggiunta di un nuovo Stand Product}
-\paragraph{Descrizione :} Un utente \textit{Seller} pubblica un nuovo \textit{Stand Product} in un proprio \textit{Flash Stand}.
-\paragraph{Pre-condizioni :} L'utente è loggato come \textit{Seller}. L'utente ha almeno un FS attivo.
-\paragraph{Post-condizioni :} Il nuovo SP è correttamente inserito nel FS specificato.
-\paragraph{Scenario principale :}
-	\begin{enumerate}
-		\item Il \textit{Seller} seleziona il \textit{Flash Stand} al quale vuole aggiungere uno \textit{Stand Product}.
-		\item Il \textit{Seller} indica che vuole inserire un nuovo \textit{Stand Product}.
-		\item Il sistema chiede all'utente di indicare una specie ittica dalla tassonomia.
-		\item Il sistema chiede l'inserimento di quantità e prezzo.
-		\item Il \textit{Seller} conferma l'inserimento di uno SP.
-	\end{enumerate}
-\subsection*{Ricerca di un Flash Stand}
-\paragraph{Descrizione :} Un utente (tipicamente un \textit{Customer}, ma potrebbe essere anche un \textit{Seller}) cerca un FS che venda un certo prodotto.
-\paragraph{Pre-condizioni :} Nel sistema sono presenti FS attivi con SP inseriti.
-\paragraph{Post-condizioni :} Nessuna.
-\paragraph{Scenario principale :}
-	\begin{enumerate}
-		\item L'utente indica la volontà di cercare un prodotto.
-		\item Il sistema chiede all'utente di indicare una specie ittica presente nella tassonomia.
-		\item Il sistema mostra gli SP che fanno riferimento a quella specie ed alle specie simili.
-		\item L'utente seleziona uno SP e vengono visualizzati i dettagli dello stesso e del FS di appartenenza.
-	\end{enumerate}
+
 
 \chapter{Modello semantico dei dati}
 RFT si basa su un modello semantico dei dati, che di seguito chiameremo \textit{indice}. Ogni elemento dell'indice rappresenta una specie ittica ed ogni prodotto pubblicato su RFT deve essere mappato con un elemento dell'indice. In questo modo si ha una corrispondeza univoca tra prodotto e specie. L'indice inoltre tiene traccia di informazioni aggiuntive che consentono la ricerca semantica dei prodotti.
