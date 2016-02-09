@@ -21,31 +21,26 @@
 \BOOKMARK [1][-]{section.4.2}{Semantica aggiunta}{chapter.4}% 21
 \BOOKMARK [2][-]{subsection.4.2.1}{Dataset di partenza}{section.4.2}% 22
 \BOOKMARK [2][-]{subsection.4.2.2}{Indice delle specie}{section.4.2}% 23
-\BOOKMARK [0][-]{chapter.5}{Ricerca per nome}{}% 24
-\BOOKMARK [1][-]{section.5.1}{Similarit\340 tra stringhe}{chapter.5}% 25
-\BOOKMARK [1][-]{section.5.2}{Algoritmo}{chapter.5}% 26
-\BOOKMARK [0][-]{chapter.6}{Ricerca per similarit\340}{}% 27
-\BOOKMARK [1][-]{section.6.1}{Vector Space Model}{chapter.6}% 28
-\BOOKMARK [2][-]{subsection.6.1.1}{Algoritmo originale}{section.6.1}% 29
-\BOOKMARK [2][-]{subsection.6.1.2}{Adattamenti}{section.6.1}% 30
-\BOOKMARK [1][-]{section.6.2}{Risultati sperimentali}{chapter.6}% 31
-\BOOKMARK [2][-]{subsection.6.2.1}{Riordinamento dei risultati}{section.6.2}% 32
-\BOOKMARK [2][-]{subsection.6.2.2}{Indipendenza dalla tassonomia}{section.6.2}% 33
-\BOOKMARK [2][-]{subsection.6.2.3}{Indipendeza dalla sintassi}{section.6.2}% 34
-\BOOKMARK [2][-]{subsection.6.2.4}{Conclusioni}{section.6.2}% 35
-\BOOKMARK [0][-]{chapter.7}{Implementazione}{}% 36
-\BOOKMARK [1][-]{section.7.1}{Back End}{chapter.7}% 37
-\BOOKMARK [2][-]{subsection.7.1.1}{Architettura REST}{section.7.1}% 38
-\BOOKMARK [2][-]{subsection.7.1.2}{JAX-RS}{section.7.1}% 39
-\BOOKMARK [2][-]{subsection.7.1.3}{Operazioni CRUD}{section.7.1}% 40
-\BOOKMARK [2][-]{subsection.7.1.4}{Individuazione delle Risorse}{section.7.1}% 41
-\BOOKMARK [2][-]{subsection.7.1.5}{API Rest}{section.7.1}% 42
-\BOOKMARK [2][-]{subsection.7.1.6}{Sicurezza}{section.7.1}% 43
-\BOOKMARK [2][-]{subsection.7.1.7}{Esempi di richieste}{section.7.1}% 44
-\BOOKMARK [1][-]{section.7.2}{Front End}{chapter.7}% 45
-\BOOKMARK [0][-]{chapter.8}{Sviluppi Futuri}{}% 46
-\BOOKMARK [1][-]{section.8.1}{Ricerche geografiche}{chapter.8}% 47
-\BOOKMARK [1][-]{section.8.2}{Gestione degli ordini}{chapter.8}% 48
-\BOOKMARK [1][-]{section.8.3}{Integrazione col Deep Web}{chapter.8}% 49
-\BOOKMARK [1][-]{section.8.4}{OAuth}{chapter.8}% 50
-\BOOKMARK [1][-]{section.8.5}{Estensione generale}{chapter.8}% 51
+\BOOKMARK [0][-]{chapter.5}{Tecniche di ricerca}{}% 24
+\BOOKMARK [1][-]{section.5.1}{Ricerca per nome}{chapter.5}% 25
+\BOOKMARK [2][-]{subsection.5.1.1}{Similarit\340 tra stringhe}{section.5.1}% 26
+\BOOKMARK [2][-]{subsection.5.1.2}{Algoritmo}{section.5.1}% 27
+\BOOKMARK [1][-]{section.5.2}{Ricerca per similarit\340}{chapter.5}% 28
+\BOOKMARK [2][-]{subsection.5.2.1}{Vector Space Model}{section.5.2}% 29
+\BOOKMARK [2][-]{subsection.5.2.2}{Risultati sperimentali}{section.5.2}% 30
+\BOOKMARK [0][-]{chapter.6}{Implementazione}{}% 31
+\BOOKMARK [1][-]{section.6.1}{Back End}{chapter.6}% 32
+\BOOKMARK [2][-]{subsection.6.1.1}{Architettura REST}{section.6.1}% 33
+\BOOKMARK [2][-]{subsection.6.1.2}{JAX-RS}{section.6.1}% 34
+\BOOKMARK [2][-]{subsection.6.1.3}{Operazioni CRUD}{section.6.1}% 35
+\BOOKMARK [2][-]{subsection.6.1.4}{Individuazione delle Risorse}{section.6.1}% 36
+\BOOKMARK [2][-]{subsection.6.1.5}{API Rest}{section.6.1}% 37
+\BOOKMARK [2][-]{subsection.6.1.6}{Sicurezza}{section.6.1}% 38
+\BOOKMARK [2][-]{subsection.6.1.7}{Esempi di richieste}{section.6.1}% 39
+\BOOKMARK [1][-]{section.6.2}{Front End}{chapter.6}% 40
+\BOOKMARK [0][-]{chapter.7}{Sviluppi Futuri}{}% 41
+\BOOKMARK [1][-]{section.7.1}{Ricerche geografiche}{chapter.7}% 42
+\BOOKMARK [1][-]{section.7.2}{Gestione degli ordini}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.3}{Integrazione col Deep Web}{chapter.7}% 44
+\BOOKMARK [1][-]{section.7.4}{OAuth}{chapter.7}% 45
+\BOOKMARK [1][-]{section.7.5}{Estensione generale}{chapter.7}% 46

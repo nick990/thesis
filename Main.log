@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.27)  9 FEB 2016 13:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.27)  9 FEB 2016 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -354,11 +354,11 @@ e
 \openout4 = `Main.toc'.
 
  [2]
-[3] (./Main.lof)
+(./Main.lof)
 \tf@lof=\write5
 \openout5 = `Main.lof'.
 
- [4
+ [3
 
 ]
 Capitolo 1.
@@ -387,7 +387,7 @@ uo idea-to-re, Tim Berners-
  []
 
 [6] [7] [8] [9]
-<./images/linked_data_cloud_2009.png, id=365, 1148.29pt x 860.21375pt>
+<./images/linked_data_cloud_2009.png, id=335, 1148.29pt x 860.21375pt>
 File: ./images/linked_data_cloud_2009.png Graphic file (type png)
 
 <use ./images/linked_data_cloud_2009.png>
@@ -395,7 +395,7 @@ Package pdftex.def Info: ./images/linked_data_cloud_2009.png used on input line
  168.
 (pdftex.def)             Requested size: 288.0011pt x 215.74857pt.
 
-<./images/linked_data_cloud_2014.png, id=366, 1027.84pt x 672.5125pt>
+<./images/linked_data_cloud_2014.png, id=336, 1027.84pt x 672.5125pt>
 File: ./images/linked_data_cloud_2014.png Graphic file (type png)
 
 <use ./images/linked_data_cloud_2014.png>
@@ -420,7 +420,7 @@ l.189
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 216.
 
-<./images/tripla_esempio.png, id=385, 775.698pt x 631.961pt>
+<./images/tripla_esempio.png, id=356, 775.698pt x 631.961pt>
 File: ./images/tripla_esempio.png Graphic file (type png)
 
 <use ./images/tripla_esempio.png>
@@ -494,7 +494,7 @@ Overfull \hbox (43.78261pt too wide) in paragraph at lines 439--451
 
 [27] [28]
 Capitolo 4.
-<./images/datamodel.png, id=495, 484.81125pt x 563.10374pt>
+<./images/datamodel.png, id=466, 484.81125pt x 563.10374pt>
 File: ./images/datamodel.png Graphic file (type png)
 
 <use ./images/datamodel.png>
@@ -518,144 +518,140 @@ species[]taxonomic.owl#ID[]31005[]2118\OT1/cmr/m/n/10.95 ;
 Capitolo 5.
 [38
 
-]
-Overfull \hbox (55.51575pt too wide) detected at line 584
+] [39]
+Overfull \hbox (55.51575pt too wide) detected at line 588
 \OML/cmm/m/it/10.95 sim\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 FRANCE; FRANCE\O
 T1/cmr/m/n/10.95 ) = []
  []
 
-[39] [40]
-Capitolo 6.
-[41
-
-] [42] [43] [44]
-Overfull \hbox (39.43013pt too wide) in paragraph at lines 690--691
+[40] [41] [42] [43]
+Overfull \hbox (39.43013pt too wide) in paragraph at lines 694--695
 []\OT1/cmtt/m/n/10.95 taxonomic = http://www.fao.org/aims/aos/fi/species[]taxon
 omic.owl# 
  []
 
-
-Overfull \hbox (15.22237pt too wide) in paragraph at lines 703--729
+[44]
+Overfull \hbox (15.22237pt too wide) in paragraph at lines 707--733
  []\OT1/cmr/bx/n/10.95 Esempio[] \OT1/cmr/m/n/10.95 Con-si-de-ria-mo il no-do \
 OT1/cmtt/m/n/10.95 14545\OT1/cmr/m/n/10.95 , uri DB-pe-dia: \OT1/cmtt/m/n/10.95
  dbr/Maroon[]clownfish\OT1/cmr/m/n/10.95 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--729
+Underfull \hbox (badness 10000) in paragraph at lines 707--733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--729
+Underfull \hbox (badness 10000) in paragraph at lines 707--733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--729
+Underfull \hbox (badness 10000) in paragraph at lines 707--733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--729
+Underfull \hbox (badness 10000) in paragraph at lines 707--733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--729
+Underfull \hbox (badness 10000) in paragraph at lines 707--733
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 703--729
+Underfull \hbox (badness 10000) in paragraph at lines 707--733
 
  []
 
 [45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 748--759
+Underfull \hbox (badness 10000) in paragraph at lines 752--763
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 748--759
+Underfull \hbox (badness 10000) in paragraph at lines 752--763
 
  []
 
-[47] [48]
-Underfull \hbox (badness 10000) in paragraph at lines 790--793
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 794--797
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 802--814
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--810
-
- []
-
-
-Overfull \hbox (23.77054pt too wide) in paragraph at lines 798--810
+Overfull \hbox (23.77054pt too wide) in paragraph at lines 802--814
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--810
+Underfull \hbox (badness 10000) in paragraph at lines 802--814
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 798--810
-
- []
-
-[49]
-Underfull \hbox (badness 10000) in paragraph at lines 811--825
+Underfull \hbox (badness 10000) in paragraph at lines 802--814
 
  []
 
 
-Overfull \hbox (14.34135pt too wide) in paragraph at lines 811--825
+Underfull \hbox (badness 10000) in paragraph at lines 815--829
+
+ []
+
+
+Overfull \hbox (14.34135pt too wide) in paragraph at lines 815--829
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 811--825
+Underfull \hbox (badness 10000) in paragraph at lines 815--829
 
  []
 
-[50] [51]
-Capitolo 7.
-[52
+[49] [50]
+Capitolo 6.
+[51
 
-] [53] [54] [55] [56]
-Overfull \hbox (69.62111pt too wide) in paragraph at lines 901--909
+] [52] [53] [54] [55]
+Overfull \hbox (69.62111pt too wide) in paragraph at lines 905--913
  [][] 
  []
 
-[57]
-Overfull \hbox (0.66144pt too wide) in paragraph at lines 930--931
+[56]
+Overfull \hbox (0.66144pt too wide) in paragraph at lines 934--935
 []\OT1/cmr/m/n/10.95 (GET) \OT1/cmtt/m/n/10.95 api/search/syntax/\OMS/cmtt/m/n/
 10.95 f\OT1/cmtt/m/n/10.95 key\OMS/cmtt/m/n/10.95 g\OT1/cmtt/m/n/10.95 ?start=[
 0]&size=[5]&lang=[en] 
  []
 
-[58] [59]
-Underfull \hbox (badness 10000) in paragraph at lines 976--981
+[57] [58]
+Underfull \hbox (badness 10000) in paragraph at lines 980--985
 
  []
 
-[60]
-Underfull \hbox (badness 10000) in paragraph at lines 1006--1010
+[59]
+Underfull \hbox (badness 10000) in paragraph at lines 1010--1014
 
  []
 
-[61] [62] [63] [64]
-Overfull \hbox (65.4029pt too wide) in paragraph at lines 1090--1090
+[60] [61] [62] [63]
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 1094--1094
 []  \OT1/cmtt/m/n/10.95 "errorMessage": "There are not Flash Product for Flash 
 Stand with id 18"[] 
  []
 
-[65] [66]
-Capitolo 8.
-(./Main.bbl [67
+[64] [65]
+Capitolo 7.
+(./Main.bbl [66
 
 ]
 Underfull \hbox (badness 4899) in paragraph at lines 25--27
@@ -670,27 +666,27 @@ Underfull \hbox (badness 3189) in paragraph at lines 25--27
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1135.
- [68
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1139.
+ [67
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1135.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1139.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1135.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1135.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1139.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1139.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
-(rerunfilecheck)             Checksum: 7F8D52638BE60993D635298CF4897348;3280.
+(rerunfilecheck)             Checksum: 415C97320F222EE90E61F35F2D1D4765;2938.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 6968 strings out of 493304
- 98144 string characters out of 6139870
- 196200 words of memory out of 5000000
- 10101 multiletter control sequences out of 15000+600000
+ 6962 strings out of 493304
+ 98060 string characters out of 6139870
+ 194197 words of memory out of 5000000
+ 10096 multiletter control sequences out of 15000+600000
  12530 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  29i,9n,28p,1322b,487s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -707,10 +703,10 @@ s/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Main.pdf (72 pages, 1526191 bytes).
+Output written on Main.pdf (70 pages, 1525654 bytes).
 PDF statistics:
- 828 PDF objects out of 1000 (max. 8388607)
- 725 compressed objects within 8 object streams
- 238 named destinations out of 1000 (max. 500000)
- 429 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 800 PDF objects out of 1000 (max. 8388607)
+ 700 compressed objects within 7 object streams
+ 237 named destinations out of 1000 (max. 500000)
+ 389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

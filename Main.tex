@@ -552,9 +552,13 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	\item \texttt{dct:subject}\\
 	Mette in relazione una risorsa nel grafo DBpedia con una seconda risorsa, che ne rappresenta una categoria.
 \end{itemize}
-\chapter{Ricerca per nome}
+\chapter{Tecniche di ricerca}
+Il cuore del lavoro di tesi è costituito dall'introduzione di tecniche di ricerca semantica all'interno dell'esistente progetto RFT. Con il termine ricerca semantica intendiamo una ricerca che si appoggi sul significato semantico degli oggetti ricercati, nel caso in questione si utilizzaranno i dati estratti dai dataset Linked Data precedentemente descritti.
+
+Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e la \textit{Ricerca per similarità}. Andiamo ora a descriverle nel dettaglio.
+\section{Ricerca per nome}
 	Per implementare la ricerca di un prodotto o di una specie in RFT si rende necessario un meccanismo per effettuare una ricerca sull'indice data una stringa. La ricerca per nome quindi torna il nodo dell'indice con il nome più simile alla chiave di ricerca.	
-	\section{Similarità tra stringhe}
+	\subsection{Similarità tra stringhe}
 	La similarità tra stringhe viene calcolato con una metrica pubblicata in un articolo online\footnote{http://www.catalysoft.com/articles/StrikeAMatch.html} da Simon White. 
 	L'algoritmo è stato guidato da tre requisiti:
 	\begin{itemize}
@@ -562,7 +566,7 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 		\item \textbf{Robustezza nell'ordinamento delle lettere}\\Due stringhe che ontengono le stesse parole, ma in un ordine differente, dvrebbero essere riconosciute come simili. D'altro canto, se una stringa è solo un anagramma casuale dei caratteri contenuti nell'altra, dovrebbe essere riconosciuta come dissimili;
 		\item \textbf{Indipendenza dal linguaggio}\\L'algoritmo non dovrebbe lavorare solo in inglese, ma in più lingue;
 	\end{itemize}	
-	\subsection*{Metrica}
+	\subsubsection{Metrica}
 	 La metrica \`e basata sul numero di coppie di caratteri adiacenti presenti in entrambe le stringhe.
 	Questo premia sia la presenza di sottostringhe comuni, che l'ordinamento comune di queste sottostringhe.
 	
@@ -574,7 +578,7 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	
 	Si noti che la formula fornisce un valore di similarità nullo per una coppia di stringhe completamente dissimili, ovvero senza alcuna coppia di caratteri in comune.
 	D'altro canto, la similarità di una stringa (non vuota) con se stessa è 1. L'algoritmo quindi torna sempre un valore compreso tra 0 e 1, il che rende naturale esprimere la similarità in percentuale.
-	\subsection*{Esempio}
+	\subsubsection{Esempio}
 	Illustriamo il funzionamento della metrica descritta tramite un esempio. Supponiamo di voler confrontare le stringhe 'France' and 'French'. Per prima cosa si passa alle corrispondenti stringhe in caratteri maiuscoli, ciò rende l'algoritmo case insensitive, dopo di che le si dividono nelle coppie di caratteri:\\
 	FRANCE = \{FR,RA,AN,NC,CE\}\\
 	FRENCH = \{FR,RE,EN,NC,CH\}\\
@@ -586,10 +590,10 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 		 = \frac{2 \cdot 5}{5 +5} = 0.4
 		\end{equation*}
 	Possiamo quindi concludere che le due stringhe in questione hanno una similarità del 40 %.
-	\section{Algoritmo}
+	\subsection{Algoritmo}
 	L'utente inserisce una stringa e indica la lingua nella quale vuole effettuare la ricerca. Per ogni nodo dell'indice vengono considerati solo i nomi nella lingua utente ed il nome scientifico. Per ogni nome viene calcolata la similarità con la chiave di ricerca e la maggiore di queste viene associata al nodo. Al termine viene tornato il nodo con la similarità maggiore.
 
-\chapter{Ricerca per similarità}
+\section{Ricerca per similarità}
 	La ricerca per similarità è un meccanismo che selezionato un nodo dell'indice, fornisce i nodi ad esso simili.	
 	La prima scelta da fare è definire cosa si intende per similarità. Tralasciando temporaneamente i formalisimi, possiamo dire che due specie sono simili se :
 	\begin{itemize}
@@ -605,22 +609,22 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	Le prime due rappresentano le informazioni riguardanti la tassonomia, la terza le caratteristiche ad essa estranee.
 	
 	L'algoritmo utilizzato per il calcolo della similarità è il Vector Space Model (VSM). Questo modello utilizza una rappresentazione vettoriale delle proprietà coinvolte.
-	\section{Vector Space Model}
+	\subsection{Vector Space Model}
 	Vector Space Model (VSM) è un modello algebrico per la rappresentazione di documenti testuali in forma vettoriale.
 	La similarità tra due documenti viene calcolata computando il coseno di similitudine tra i due vettori che li rappresentano.
-	\paragraph{Coseno di similitudine}
+	\subsubsection{Coseno di similitudine}
 	Il coseno di similitudine è una tecnica euristica per la misurazione della similitudine tra due vettori effettuata calcolando il coseno tra di loro.
 	Dati due vettori di attributi numerici, \textit{A} e \textit{B}, il livello di similarità tra di loro è espresso utilizzando la formula:
 	\begin{equation*}
 		\frac{A\cdot B}{|A|\cdot |B|}
 	\end{equation*}
 	In base alla definizione del coseno, dati due vettori si otterrà sempre un valore di similitudine compreso tra -1 e +1, dove -1 indica una corrispondenza esatta ma opposta (ossia un vettore contiene l'opposto dei valori presenti nell'altro) e +1 indica due vettori uguali.
-	\paragraph{VSM e RDF}
+	\subsubsection{VSM e RDF}
 	Nel caso di studio, non siamo interessati ai documenti testuali, bensì al calcolo della similarità tra risorse RDF.
 	Per questo motivo, consideriamo la versione proposta nell'articolo\cite{Reference1} pensata per risorse RDF in un sistema di raccomandazione.
 	
 	Proponiamo di seguito l'algoritmo originale presentato nell'articolo sopracitato e gli adattamenti che si sono ritenuti necessari per il caso in questione.
-	\subsection{Algoritmo originale}
+	\subsubsection{Algoritmo originale}
 	Il modello utlizzato si rifà allo schema TF-IDF (Term Frequency - Inverse Document Frequency) che nasce per i documenti di testo.
 	Questa versione di VSM ha lo sopo di calcolare la similarità tra risorse appartenenti allo stesso grafo RDF, considerando solo proprietà il cui oggetto è una risorsa e non un letterale.
 	\paragraph{Rappresentazione vettoriale}
@@ -655,7 +659,7 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	sim^p(r_{i},r_{j}) = \frac{\displaystyle\sum_{n=1}^{t} w_{n,i,p} \cdot w_{n,j,p}}{\sqrt{\displaystyle\sum_{n=1}^{t} w^2_{n,i,p}} \cdot  \sqrt{\displaystyle\sum_{n=1}^{t} w^2_{n,j,p}}} 
 	\end{equation*}
 	La formula per la similarità rispetto a tutte le proprietà non viene riportata in quanto fa riferimento a entità tipiche di un sistema di raccomandazione, che non interessano il nostro sistema.
-	\subsection{Adattamenti}
+	\subsubsection{Adattamenti}
 	Il nostro caso viola le premesse dell'algoritmo originale in due punti:
 	\begin{itemize}
 	\item Consideriamo anche propriet\`a che hanno sia risorse che letterali come oggetto;
@@ -673,10 +677,10 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	\begin{equation*}
 	sim(r_{i},r_{j}) =\frac{\displaystyle\sum_{p \in P} sim^p(r_{i},r_{j})}{|P|}
 	\end{equation*}
-	\section{Risultati sperimentali}
+	\subsection{Risultati sperimentali}
 	I test condotti hanno lo scopo di dimostrare l'effettiva utilità delle tecniche di ricerca implementate. Particolare enfasi è posta sull'utilizzo di proprietà non legate alla tassonomia, nel caso specifo è stata utilizzata solo la proprietà \texttt{dct:subject} .
 	La modularit\`a del codice, poi consente la facile inclusione di nuove propriet\`a, anche derivanti da grafi linked data diversi.
-	\paragraph{Definizioni}
+	\subsubsection{Definizioni}
 	Si rendono necessarie alcune definizioni per poter illustrare i risultati dei test.
 	\begin{itemize}
 		\item \textbf{Higher Rank}\\Chiamiamo \textit{Higher Rank} (\textit{HR}) di una specie, una seconda specie che si trova in un livello superiore delle tassonomia.
@@ -692,7 +696,7 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	\item \texttt{dct = http://purl.org/dc/terms/}
 	\item \texttt{dbc = http://dbpedia.org/resource/Category:}
 	\end{itemize}
-	\subsection{Riordinamento dei risultati}
+	\subsubsection{Riordinamento dei risultati}
 	Utilizzando solo le prime due propriet\`a definite dalla ontologia FAO, l'unica metrica utilizzata per il calcolo della similarit\`a di due specie sarebbe la loro posizione nella tassonomia.
 	
 	Data una specie in particolare, i risultati di una ricerca semantica vedrebbero al primo posto tutti i pesci con il maggior numero di Higher Rank in comune con la specie in questione, prediligendo quelli che condividono anche l'Higher Rank diretto.
@@ -726,7 +730,7 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	La tendenza rimane la stessa, ovvero i primi nodi rimangono quelli con Higher Rank pari a 4.
 	Tra questi, però emerge il nodo \texttt{12825} che, con l'introduzione della terza propriet\`a, ottiene una similarit\`a maggiore rispetto agli altri nodi con il massimo numero di Higher Rank in comune.
 	Questo è dovuto al fatto che il nodo \texttt{12825} fa riferimento alla risorsa \texttt{dbr/Garibaldi\_(fish)} che condivide con il nodo \texttt{14545} la categoria \texttt{dbc:Monotypic\_fish\_genera}. Gli altri risultati invece non condividono alcuna categoria, nel caso specifico non hanno proprio una risorsa corrispondente in DBpedia.
-	\subsection{Indipendenza dalla tassonomia}
+	\subsubsection{Indipendenza dalla tassonomia}
 	Un altro vantaggio dell'utilizzo di propriet\`a non legate alla tassonomia, \`e la capacit\`a di invertire la tendenza descritta precedentemente. In alcuni casi, infatti una specie potrebbe essere più simile ad un'altra non strettamente legata nella tassonomia. Questa similarità però è impossibilitata ad emergere utilizzando solo le proprietà definite dalla FAO, che usano come unica metrica la posizione nell'albero tassonomico.
 	\paragraph{Esempio}
 	Consideriamo il nodo \texttt{2933}, uri DBpedia: \texttt{dbr/Chinook\_Salmon}.\\
@@ -783,7 +787,7 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 			\item \texttt{dbc:Fly\_fishing\_target\_species}
 		\end{itemize}
 	\end{itemize}
-	\subsection{Indipendeza dalla sintassi}
+	\subsubsection{Indipendeza dalla sintassi}
 	In questo test si vuole dimostrare come la ricerca basata su proprietà semantiche fornisca dei risultati migliori di quelli ottenibili con una ricerca basata semplicemente sulla sintassi. In una ricerca di questo tipo vengono mostrati i nodi i cui nomi corrispondono maggiormente ad una stringa scelta dall'utente come chiave della ricerca.
 	Con questo primitivo approccio non verranno visualizzati i nodi simili ma con nomi dissimili.
 	\paragraph{Esempio}
@@ -822,7 +826,7 @@ Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione de
 	Andiamo ora a confrontare le due tabelle.
 	Utilizzando la ricerca sintattica otteniamo dei risultati simili nel nome, ma lontani semanticamente. Ad esempio il terzo risultato della prima tabella ha una similarità col nodo di riferimento pari a 0.0004.
 	Utilizzando invece la ricerca semantica proposta, si ottengono risultati semanticamente vicini, anche se con nomi diversi. Ad esempio il quinto risultato della seconda tabella ha una similarità molto alta (0.76), ma non sarebbe mai comparso nei risultati di una ricerca sintattica.
-	\subsection{Conclusioni}
+	\subsubsection{Conclusioni}
 	Dai test riportati emerge  come la tecnica di ricerca proposta sia in grado di fornire risultati migliori di quelli ottenibili tramite tecniche più semplici come quelle basate esclusivamente sulla tassonomia o sui nomi.
 	
 	I primi due test mostrano i miglioramenti riscontrati rispetto ad una ricerca semantica basata esclusivamente sulla tassonomia. La nuova tecnica infatti si è dimostrata in grado di consentire un ordinamento dei nodi nella stessa posizione nell'albero tassonomico e di dare la giusta priorità alle specie simili anche se più lontante nella tassonomia rispetto ad altre.
