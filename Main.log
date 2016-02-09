@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.27)  9 FEB 2016 15:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.11.27)  9 FEB 2016 15:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -364,76 +364,76 @@ e
 Capitolo 1.
 [1
 
-] [2] [3] [4]
+] [2] [3]
 Capitolo 2.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 82.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 78.
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 82.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
 
-Overfull \hbox (5.5176pt too wide) in paragraph at lines 83--84
+Overfull \hbox (5.5176pt too wide) in paragraph at lines 79--80
 []\OT1/cmr/m/n/10.95 HTTP: il pro-to-col-lo di re-te (li-vel-lo di ap-pli-ca-zi
 o-ne del mo-del-lo ISO/OSI)
  []
 
-[5
+[4
 
 ]
-Overfull \hbox (1.41125pt too wide) in paragraph at lines 103--104
+Overfull \hbox (1.41125pt too wide) in paragraph at lines 99--100
 \OT1/cmr/m/n/10.95 Con il ter-mi-ne web se-man-ti-co, ter-mi-ne co-nia-to dal s
 uo idea-to-re, Tim Berners-
  []
 
-[6] [7] [8] [9]
-<./images/linked_data_cloud_2009.png, id=335, 1148.29pt x 860.21375pt>
+[5] [6] [7] [8]
+<./images/linked_data_cloud_2009.png, id=329, 1148.29pt x 860.21375pt>
 File: ./images/linked_data_cloud_2009.png Graphic file (type png)
 
 <use ./images/linked_data_cloud_2009.png>
 Package pdftex.def Info: ./images/linked_data_cloud_2009.png used on input line
- 168.
+ 164.
 (pdftex.def)             Requested size: 288.0011pt x 215.74857pt.
 
-<./images/linked_data_cloud_2014.png, id=336, 1027.84pt x 672.5125pt>
+<./images/linked_data_cloud_2014.png, id=330, 1027.84pt x 672.5125pt>
 File: ./images/linked_data_cloud_2014.png Graphic file (type png)
 
 <use ./images/linked_data_cloud_2014.png>
 Package pdftex.def Info: ./images/linked_data_cloud_2014.png used on input line
- 174.
+ 170.
 (pdftex.def)             Requested size: 360.0pt x 235.54709pt.
- [10pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
-1}) has been already used, duplicate ignored
+ [9pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.178  I
+l.174  I
         l numero di dataset è cresciuto a dismisura e continuano ad aumentar...
- <./images/linked_data_cloud_2009.png>] [11pdfTeX warning (ext4): destination w
+ <./images/linked_data_cloud_2009.png>] [10pdfTeX warning (ext4): destination w
 ith the same identifier (name{figure.2.2}) has been already used, duplicate ign
 ored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.189 
-       <./images/linked_data_cloud_2014.png>] [12]
+l.185 
+       <./images/linked_data_cloud_2014.png>] [11]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 216.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 212.
 
-<./images/tripla_esempio.png, id=356, 775.698pt x 631.961pt>
+<./images/tripla_esempio.png, id=350, 775.698pt x 631.961pt>
 File: ./images/tripla_esempio.png Graphic file (type png)
 
 <use ./images/tripla_esempio.png>
-Package pdftex.def Info: ./images/tripla_esempio.png used on input line 228.
+Package pdftex.def Info: ./images/tripla_esempio.png used on input line 224.
 (pdftex.def)             Requested size: 288.0011pt x 234.63191pt.
- [13] [14pdfTeX warning (ext4): destination with the same identifier (name{figu
+ [12] [13pdfTeX warning (ext4): destination with the same identifier (name{figu
 re.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.238 \subsection
-                 *{Serializzazione} <./images/tripla_esempio.png>] [15]
-Overfull \hbox (21.04886pt too wide) in paragraph at lines 258--260
+l.234 \subsection
+                 *{Serializzazione} <./images/tripla_esempio.png>] [14]
+Overfull \hbox (21.04886pt too wide) in paragraph at lines 254--256
 \OT1/cmr/m/n/10.95 SPARQL (acro-ni-mo ri-cor-si-vo per \OT1/cmr/bx/n/10.95 S\OT
 1/cmr/m/n/10.95 PARQL \OT1/cmr/bx/n/10.95 P\OT1/cmr/m/n/10.95 rotocol \OT1/cmr/
 bx/n/10.95 a\OT1/cmr/m/n/10.95 nd \OT1/cmr/bx/n/10.95 R\OT1/cmr/m/n/10.95 DF \O
@@ -441,217 +441,217 @@ T1/cmr/bx/n/10.95 Q\OT1/cmr/m/n/10.95 uery \OT1/cmr/bx/n/10.95 L\OT1/cmr/m/n/10
 .95 anguage)
  []
 
-[16]
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 272
+[15]
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 268
 .
-LaTeX Font Info:    No file OMScmtt.fd. on input line 272.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 268.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 272.
+(Font)              for symbol `textbraceleft' on input line 268.
 
-[17] [18]
+[16] [17]
 Capitolo 3.
-[19
+[18
 
-] [20] [21] [22] [23] [24] [25]
-Underfull \hbox (badness 2990) in paragraph at lines 392--393
+] [19] [20] [21] [22] [23] [24]
+Underfull \hbox (badness 2990) in paragraph at lines 388--389
 []\OT1/cmr/m/n/10.95 Il si-ste-ma chie-de di in-di-ca-re il ruo-lo (\OT1/cmr/m/
 it/10.95 Sel-ler \OT1/cmr/m/n/10.95 o
  []
 
 
-Overfull \hbox (43.78261pt too wide) in paragraph at lines 380--397
+Overfull \hbox (43.78261pt too wide) in paragraph at lines 376--393
 [] 
  []
 
 
-Overfull \hbox (43.78261pt too wide) in paragraph at lines 398--409
+Overfull \hbox (43.78261pt too wide) in paragraph at lines 394--405
 [] 
  []
 
 
-Overfull \hbox (43.78261pt too wide) in paragraph at lines 409--424
+Overfull \hbox (43.78261pt too wide) in paragraph at lines 405--420
 [] 
  []
 
-[26]
-Underfull \hbox (badness 1546) in paragraph at lines 430--431
+[25]
+Underfull \hbox (badness 1546) in paragraph at lines 426--427
 []\OT1/cmr/m/n/10.95 Il \OT1/cmr/m/it/10.95 Sel-ler \OT1/cmr/m/n/10.95 se-le-zi
 o-na il \OT1/cmr/m/it/10.95 Flash Stand \OT1/cmr/m/n/10.95 al qua-le vuo-le
  []
 
 
-Overfull \hbox (43.78261pt too wide) in paragraph at lines 425--438
+Overfull \hbox (43.78261pt too wide) in paragraph at lines 421--434
 [] 
  []
 
 
-Overfull \hbox (43.78261pt too wide) in paragraph at lines 439--451
+Overfull \hbox (43.78261pt too wide) in paragraph at lines 435--447
 [] 
  []
 
-[27] [28]
+[26] [27]
 Capitolo 4.
-<./images/datamodel.png, id=466, 484.81125pt x 563.10374pt>
+<./images/datamodel.png, id=459, 484.81125pt x 563.10374pt>
 File: ./images/datamodel.png Graphic file (type png)
 
 <use ./images/datamodel.png>
-Package pdftex.def Info: ./images/datamodel.png used on input line 460.
+Package pdftex.def Info: ./images/datamodel.png used on input line 456.
 (pdftex.def)             Requested size: 241.84842pt x 280.90675pt.
- [29
+ [28
 
-] [30pdfTeX warning (ext4): destination with the same identifier (name{figure.4
+] [29pdfTeX warning (ext4): destination with the same identifier (name{figure.4
 .1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.472 
-       <./images/datamodel.png>] [31] [32] [33] [34] [35]
-Overfull \hbox (92.66418pt too wide) in paragraph at lines 541--542
+l.468 
+       <./images/datamodel.png>] [30] [31] [32] [33] [34]
+Overfull \hbox (92.66418pt too wide) in paragraph at lines 537--538
 \OT1/cmr/m/n/10.95 Esempio: \OT1/cmtt/m/n/10.95 http://www.fao.org/aims/aos/fi/
 species[]taxonomic.owl#ID[]31005[]2118\OT1/cmr/m/n/10.95 ; 
  []
 
-[36] [37]
+[35] [36]
 Capitolo 5.
-[38
+[37
 
-] [39]
-Overfull \hbox (55.51575pt too wide) detected at line 588
+] [38]
+Overfull \hbox (55.51575pt too wide) detected at line 584
 \OML/cmm/m/it/10.95 sim\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 FRANCE; FRANCE\O
 T1/cmr/m/n/10.95 ) = []
  []
 
-[40] [41] [42] [43]
-Overfull \hbox (39.43013pt too wide) in paragraph at lines 694--695
+[39] [40] [41] [42]
+Overfull \hbox (39.43013pt too wide) in paragraph at lines 690--691
 []\OT1/cmtt/m/n/10.95 taxonomic = http://www.fao.org/aims/aos/fi/species[]taxon
 omic.owl# 
  []
 
-[44]
-Overfull \hbox (15.22237pt too wide) in paragraph at lines 707--733
+[43]
+Overfull \hbox (15.22237pt too wide) in paragraph at lines 703--729
  []\OT1/cmr/bx/n/10.95 Esempio[] \OT1/cmr/m/n/10.95 Con-si-de-ria-mo il no-do \
 OT1/cmtt/m/n/10.95 14545\OT1/cmr/m/n/10.95 , uri DB-pe-dia: \OT1/cmtt/m/n/10.95
  dbr/Maroon[]clownfish\OT1/cmr/m/n/10.95 . 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--733
+Underfull \hbox (badness 10000) in paragraph at lines 703--729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--733
+Underfull \hbox (badness 10000) in paragraph at lines 703--729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--733
+Underfull \hbox (badness 10000) in paragraph at lines 703--729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--733
+Underfull \hbox (badness 10000) in paragraph at lines 703--729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--733
+Underfull \hbox (badness 10000) in paragraph at lines 703--729
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 707--733
+Underfull \hbox (badness 10000) in paragraph at lines 703--729
 
  []
 
-[45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 752--763
+[44] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 748--759
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 752--763
+Underfull \hbox (badness 10000) in paragraph at lines 748--759
+
+ []
+
+[46]
+Underfull \hbox (badness 10000) in paragraph at lines 790--793
 
  []
 
 [47]
-Underfull \hbox (badness 10000) in paragraph at lines 794--797
-
- []
-
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 802--814
+Underfull \hbox (badness 10000) in paragraph at lines 798--810
 
  []
 
 
-Overfull \hbox (23.77054pt too wide) in paragraph at lines 802--814
+Overfull \hbox (23.77054pt too wide) in paragraph at lines 798--810
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 802--814
+Underfull \hbox (badness 10000) in paragraph at lines 798--810
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 802--814
+Underfull \hbox (badness 10000) in paragraph at lines 798--810
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--829
+Underfull \hbox (badness 10000) in paragraph at lines 811--825
 
  []
 
 
-Overfull \hbox (14.34135pt too wide) in paragraph at lines 815--829
+Overfull \hbox (14.34135pt too wide) in paragraph at lines 811--825
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 815--829
+Underfull \hbox (badness 10000) in paragraph at lines 811--825
 
  []
 
-[49] [50]
+[48] [49]
 Capitolo 6.
-[51
+[50
 
-] [52] [53] [54] [55]
-Overfull \hbox (69.62111pt too wide) in paragraph at lines 905--913
+] [51] [52] [53] [54]
+Overfull \hbox (69.62111pt too wide) in paragraph at lines 901--909
  [][] 
  []
 
-[56]
-Overfull \hbox (0.66144pt too wide) in paragraph at lines 934--935
+[55]
+Overfull \hbox (0.66144pt too wide) in paragraph at lines 930--931
 []\OT1/cmr/m/n/10.95 (GET) \OT1/cmtt/m/n/10.95 api/search/syntax/\OMS/cmtt/m/n/
 10.95 f\OT1/cmtt/m/n/10.95 key\OMS/cmtt/m/n/10.95 g\OT1/cmtt/m/n/10.95 ?start=[
 0]&size=[5]&lang=[en] 
  []
 
-[57] [58]
-Underfull \hbox (badness 10000) in paragraph at lines 980--985
+[56] [57]
+Underfull \hbox (badness 10000) in paragraph at lines 976--981
 
  []
 
-[59]
-Underfull \hbox (badness 10000) in paragraph at lines 1010--1014
+[58]
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1010
 
  []
 
-[60] [61] [62] [63]
-Overfull \hbox (65.4029pt too wide) in paragraph at lines 1094--1094
+[59] [60] [61] [62]
+Overfull \hbox (65.4029pt too wide) in paragraph at lines 1090--1090
 []  \OT1/cmtt/m/n/10.95 "errorMessage": "There are not Flash Product for Flash 
 Stand with id 18"[] 
  []
 
-[64] [65]
+[63] [64]
 Capitolo 7.
-(./Main.bbl [66
+(./Main.bbl [65
 
 ]
 Underfull \hbox (badness 4899) in paragraph at lines 25--27
@@ -666,14 +666,14 @@ Underfull \hbox (badness 3189) in paragraph at lines 25--27
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1139.
- [67
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1135.
+ [66
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1139.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1135.
  (./Main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1139.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1139.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1135.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1135.
 
 Package rerunfilecheck Info: File `Main.out' has not changed.
 (rerunfilecheck)             Checksum: 415C97320F222EE90E61F35F2D1D4765;2938.
@@ -683,9 +683,9 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 6962 strings out of 493304
- 98060 string characters out of 6139870
- 194197 words of memory out of 5000000
+ 6959 strings out of 493304
+ 98031 string characters out of 6139870
+ 195196 words of memory out of 5000000
  10096 multiletter control sequences out of 15000+600000
  12530 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -703,10 +703,10 @@ s/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Main.pdf (70 pages, 1525654 bytes).
+Output written on Main.pdf (69 pages, 1524526 bytes).
 PDF statistics:
- 800 PDF objects out of 1000 (max. 8388607)
- 700 compressed objects within 7 object streams
- 237 named destinations out of 1000 (max. 500000)
+ 793 PDF objects out of 1000 (max. 8388607)
+ 694 compressed objects within 7 object streams
+ 234 named destinations out of 1000 (max. 500000)
  389 words of extra memory for PDF output out of 10000 (max. 10000000)
 

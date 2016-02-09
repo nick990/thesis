@@ -4,91 +4,91 @@
 \contentsline {section}{\numberline {1.1}Ambito di interesse}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Obbiettivi e modalit\`a di lavoro}{1}{section.1.2}
 \contentsline {section}{\numberline {1.3}Struttura della Tesi}{2}{section.1.3}
-\contentsline {chapter}{\numberline {2}Web semantico}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Dal Web al Web semantico}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Linked Data}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Resoruce Description Framework}{11}{section.2.3}
-\contentsline {section}{\numberline {2.4}OWL}{15}{section.2.4}
-\contentsline {section}{\numberline {2.5}SPARQL}{16}{section.2.5}
-\contentsline {chapter}{\numberline {3}Il caso di studio : RFT}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}Utenti}{20}{section.3.1}
-\contentsline {section}{\numberline {3.2}Definizioni}{20}{section.3.2}
-\contentsline {section}{\numberline {3.3}Funzionalit\`a}{21}{section.3.3}
-\contentsline {section}{\numberline {3.4}Lo scenario Cileno}{24}{section.3.4}
-\contentsline {section}{\numberline {3.5}Prototipo}{25}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Funzionalit\`a implementate}{25}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Casi d'uso}{26}{subsection.3.5.2}
-\contentsline {paragraph}{Registrazione}{26}{section*.31}
-\contentsline {paragraph}{Creazione di un nuovo Flash Stand}{27}{section*.33}
-\contentsline {paragraph}{Aggiunta di un nuovo Stand Product}{27}{section*.34}
-\contentsline {paragraph}{Ricerca di un Flash Stand}{28}{section*.35}
-\contentsline {chapter}{\numberline {4}Modello dei dati}{29}{chapter.4}
-\contentsline {section}{\numberline {4.1}Modello concettuale}{29}{section.4.1}
-\contentsline {subsubsection}{Flash Stand}{30}{section*.36}
-\contentsline {subsubsection}{Stand Product}{31}{section*.37}
-\contentsline {subsubsection}{Type}{31}{section*.38}
-\contentsline {subsubsection}{User}{31}{section*.39}
-\contentsline {section}{\numberline {4.2}Semantica aggiunta}{31}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Dataset di partenza}{32}{subsection.4.2.1}
-\contentsline {subsubsection}{Tassonomia ASFIS-FAO}{32}{section*.40}
-\contentsline {paragraph}{Struttura}{32}{section*.41}
-\contentsline {paragraph}{Propriet\`a}{33}{section*.42}
-\contentsline {paragraph}{Campi}{33}{section*.43}
-\contentsline {subsubsection}{DBpedia}{34}{section*.44}
-\contentsline {paragraph}{Dataset}{35}{section*.45}
-\contentsline {subsection}{\numberline {4.2.2}Indice delle specie}{35}{subsection.4.2.2}
-\contentsline {subsubsection}{Informazioni rappresentate}{36}{section*.46}
-\contentsline {subsubsection}{Propriet\`a estratte}{36}{section*.47}
-\contentsline {chapter}{\numberline {5}Tecniche di ricerca}{38}{chapter.5}
-\contentsline {section}{\numberline {5.1}Ricerca per nome}{38}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Similarit\`a tra stringhe}{38}{subsection.5.1.1}
-\contentsline {subsubsection}{Metrica}{39}{section*.48}
-\contentsline {subsubsection}{Esempio}{40}{section*.49}
-\contentsline {subsection}{\numberline {5.1.2}Algoritmo}{40}{subsection.5.1.2}
-\contentsline {section}{\numberline {5.2}Ricerca per similarit\`a}{40}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Vector Space Model}{41}{subsection.5.2.1}
-\contentsline {subsubsection}{Coseno di similitudine}{41}{section*.50}
-\contentsline {subsubsection}{VSM e RDF}{42}{section*.51}
-\contentsline {subsubsection}{Algoritmo originale}{42}{section*.52}
-\contentsline {paragraph}{Rappresentazione vettoriale}{42}{section*.53}
+\contentsline {chapter}{\numberline {2}Web semantico}{4}{chapter.2}
+\contentsline {section}{\numberline {2.1}Dal Web al Web semantico}{4}{section.2.1}
+\contentsline {section}{\numberline {2.2}Linked Data}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Resoruce Description Framework}{10}{section.2.3}
+\contentsline {section}{\numberline {2.4}OWL}{14}{section.2.4}
+\contentsline {section}{\numberline {2.5}SPARQL}{15}{section.2.5}
+\contentsline {chapter}{\numberline {3}Il caso di studio : RFT}{18}{chapter.3}
+\contentsline {section}{\numberline {3.1}Utenti}{19}{section.3.1}
+\contentsline {section}{\numberline {3.2}Definizioni}{19}{section.3.2}
+\contentsline {section}{\numberline {3.3}Funzionalit\`a}{20}{section.3.3}
+\contentsline {section}{\numberline {3.4}Lo scenario Cileno}{23}{section.3.4}
+\contentsline {section}{\numberline {3.5}Prototipo}{24}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Funzionalit\`a implementate}{24}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Casi d'uso}{25}{subsection.3.5.2}
+\contentsline {paragraph}{Registrazione}{25}{section*.29}
+\contentsline {paragraph}{Creazione di un nuovo Flash Stand}{26}{section*.31}
+\contentsline {paragraph}{Aggiunta di un nuovo Stand Product}{26}{section*.32}
+\contentsline {paragraph}{Ricerca di un Flash Stand}{27}{section*.33}
+\contentsline {chapter}{\numberline {4}Modello dei dati}{28}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modello concettuale}{28}{section.4.1}
+\contentsline {subsubsection}{Flash Stand}{29}{section*.34}
+\contentsline {subsubsection}{Stand Product}{30}{section*.35}
+\contentsline {subsubsection}{Type}{30}{section*.36}
+\contentsline {subsubsection}{User}{30}{section*.37}
+\contentsline {section}{\numberline {4.2}Semantica aggiunta}{30}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Dataset di partenza}{31}{subsection.4.2.1}
+\contentsline {subsubsection}{Tassonomia ASFIS-FAO}{31}{section*.38}
+\contentsline {paragraph}{Struttura}{31}{section*.39}
+\contentsline {paragraph}{Propriet\`a}{32}{section*.40}
+\contentsline {paragraph}{Campi}{32}{section*.41}
+\contentsline {subsubsection}{DBpedia}{33}{section*.42}
+\contentsline {paragraph}{Dataset}{34}{section*.43}
+\contentsline {subsection}{\numberline {4.2.2}Indice delle specie}{34}{subsection.4.2.2}
+\contentsline {subsubsection}{Informazioni rappresentate}{35}{section*.44}
+\contentsline {subsubsection}{Propriet\`a estratte}{35}{section*.45}
+\contentsline {chapter}{\numberline {5}Tecniche di ricerca}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Ricerca per nome}{37}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Similarit\`a tra stringhe}{37}{subsection.5.1.1}
+\contentsline {subsubsection}{Metrica}{38}{section*.46}
+\contentsline {subsubsection}{Esempio}{39}{section*.47}
+\contentsline {subsection}{\numberline {5.1.2}Algoritmo}{39}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Ricerca per similarit\`a}{39}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Vector Space Model}{40}{subsection.5.2.1}
+\contentsline {subsubsection}{Coseno di similitudine}{40}{section*.48}
+\contentsline {subsubsection}{VSM e RDF}{41}{section*.49}
+\contentsline {subsubsection}{Algoritmo originale}{41}{section*.50}
+\contentsline {paragraph}{Rappresentazione vettoriale}{41}{section*.51}
+\contentsline {paragraph}{Calcolo della similitudine}{42}{section*.52}
+\contentsline {subsubsection}{Adattamenti}{42}{section*.53}
 \contentsline {paragraph}{Calcolo della similitudine}{43}{section*.54}
-\contentsline {subsubsection}{Adattamenti}{43}{section*.55}
-\contentsline {paragraph}{Calcolo della similitudine}{44}{section*.56}
-\contentsline {subsection}{\numberline {5.2.2}Risultati sperimentali}{44}{subsection.5.2.2}
-\contentsline {subsubsection}{Definizioni}{44}{section*.57}
-\contentsline {subsubsection}{Riordinamento dei risultati}{45}{section*.58}
+\contentsline {subsection}{\numberline {5.2.2}Risultati sperimentali}{43}{subsection.5.2.2}
+\contentsline {subsubsection}{Definizioni}{43}{section*.55}
+\contentsline {subsubsection}{Riordinamento dei risultati}{44}{section*.56}
+\contentsline {paragraph}{Esempio}{44}{section*.57}
+\contentsline {subsubsection}{Indipendenza dalla tassonomia}{45}{section*.58}
 \contentsline {paragraph}{Esempio}{45}{section*.59}
-\contentsline {subsubsection}{Indipendenza dalla tassonomia}{46}{section*.60}
-\contentsline {paragraph}{Esempio}{46}{section*.61}
-\contentsline {subsubsection}{Indipendeza dalla sintassi}{48}{section*.62}
-\contentsline {paragraph}{Esempio}{48}{section*.63}
-\contentsline {subsubsection}{Conclusioni}{50}{section*.64}
-\contentsline {chapter}{\numberline {6}Implementazione}{51}{chapter.6}
-\contentsline {section}{\numberline {6.1}Back End}{51}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Architettura REST}{51}{subsection.6.1.1}
-\contentsline {paragraph}{Vincoli}{52}{section*.65}
-\contentsline {paragraph}{Propriet\`a architetturali}{54}{section*.66}
-\contentsline {paragraph}{Risorse}{54}{section*.67}
-\contentsline {subsection}{\numberline {6.1.2}JAX-RS}{55}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Operazioni CRUD}{56}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Individuazione delle Risorse}{56}{subsection.6.1.4}
-\contentsline {subsection}{\numberline {6.1.5}API Rest}{57}{subsection.6.1.5}
-\contentsline {paragraph}{Ricerca per nome}{57}{section*.68}
-\contentsline {paragraph}{Ricerca per similarit\`a}{58}{section*.69}
-\contentsline {paragraph}{Nodi}{58}{section*.70}
-\contentsline {paragraph}{Flash Stand}{58}{section*.71}
-\contentsline {paragraph}{Stand Product}{60}{section*.72}
-\contentsline {paragraph}{Utenti}{60}{section*.73}
-\contentsline {paragraph}{Varie}{61}{section*.74}
-\contentsline {subsection}{\numberline {6.1.6}Sicurezza}{62}{subsection.6.1.6}
-\contentsline {paragraph}{HTTP Basic Access Authentication}{62}{section*.75}
-\contentsline {subsection}{\numberline {6.1.7}Esempi di richieste}{63}{subsection.6.1.7}
-\contentsline {paragraph}{Richiesta degli Stand Product di un Flash Stand}{63}{section*.76}
-\contentsline {paragraph}{Creazione di un Flash Stand}{64}{section*.77}
-\contentsline {section}{\numberline {6.2}Front End}{65}{section.6.2}
-\contentsline {chapter}{\numberline {7}Sviluppi Futuri}{66}{chapter.7}
-\contentsline {section}{\numberline {7.1}Ricerche geografiche}{66}{section.7.1}
-\contentsline {section}{\numberline {7.2}Gestione degli ordini}{66}{section.7.2}
-\contentsline {section}{\numberline {7.3}Integrazione col Deep Web}{66}{section.7.3}
-\contentsline {section}{\numberline {7.4}OAuth}{66}{section.7.4}
-\contentsline {section}{\numberline {7.5}Estensione generale}{66}{section.7.5}
+\contentsline {subsubsection}{Indipendeza dalla sintassi}{47}{section*.60}
+\contentsline {paragraph}{Esempio}{47}{section*.61}
+\contentsline {subsubsection}{Conclusioni}{49}{section*.62}
+\contentsline {chapter}{\numberline {6}Implementazione}{50}{chapter.6}
+\contentsline {section}{\numberline {6.1}Back End}{50}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Architettura REST}{50}{subsection.6.1.1}
+\contentsline {paragraph}{Vincoli}{51}{section*.63}
+\contentsline {paragraph}{Propriet\`a architetturali}{53}{section*.64}
+\contentsline {paragraph}{Risorse}{53}{section*.65}
+\contentsline {subsection}{\numberline {6.1.2}JAX-RS}{54}{subsection.6.1.2}
+\contentsline {subsection}{\numberline {6.1.3}Operazioni CRUD}{55}{subsection.6.1.3}
+\contentsline {subsection}{\numberline {6.1.4}Individuazione delle Risorse}{55}{subsection.6.1.4}
+\contentsline {subsection}{\numberline {6.1.5}API Rest}{56}{subsection.6.1.5}
+\contentsline {paragraph}{Ricerca per nome}{56}{section*.66}
+\contentsline {paragraph}{Ricerca per similarit\`a}{57}{section*.67}
+\contentsline {paragraph}{Nodi}{57}{section*.68}
+\contentsline {paragraph}{Flash Stand}{57}{section*.69}
+\contentsline {paragraph}{Stand Product}{59}{section*.70}
+\contentsline {paragraph}{Utenti}{59}{section*.71}
+\contentsline {paragraph}{Varie}{60}{section*.72}
+\contentsline {subsection}{\numberline {6.1.6}Sicurezza}{61}{subsection.6.1.6}
+\contentsline {paragraph}{HTTP Basic Access Authentication}{61}{section*.73}
+\contentsline {subsection}{\numberline {6.1.7}Esempi di richieste}{62}{subsection.6.1.7}
+\contentsline {paragraph}{Richiesta degli Stand Product di un Flash Stand}{62}{section*.74}
+\contentsline {paragraph}{Creazione di un Flash Stand}{63}{section*.75}
+\contentsline {section}{\numberline {6.2}Front End}{64}{section.6.2}
+\contentsline {chapter}{\numberline {7}Sviluppi Futuri}{65}{chapter.7}
+\contentsline {section}{\numberline {7.1}Ricerche geografiche}{65}{section.7.1}
+\contentsline {section}{\numberline {7.2}Gestione degli ordini}{65}{section.7.2}
+\contentsline {section}{\numberline {7.3}Integrazione col Deep Web}{65}{section.7.3}
+\contentsline {section}{\numberline {7.4}OAuth}{65}{section.7.4}
+\contentsline {section}{\numberline {7.5}Estensione generale}{65}{section.7.5}
