@@ -296,13 +296,14 @@ abc:isInContinent abc:Africa .\\
  }
 
 \chapter{Il caso di studio : RFT}
-Il sistema del caso di studio prende il nome di \textbf{Real Food Trade} (\textbf{RFT}).
-RFT consente ai pescatori di vendere i propri prodotti direttamente al consumatore finale,  tramite la pubblicazione di mercati temporanei.
-Questi mercati temporanei rappresentano dei punti di incontro, identificati da un orario ed un luogo nello spazio, tra produttore e consumatore che rendono possibile la vendita diretta. 
-Questo sistema è stato progettato ed implementato nelle tesi dei dottori L. Menichetti, L. Nardini, M. Ungania (Università degli Studi Roma Tre).
+Il caso di studio è costituito dal sistema che prende il nome di \textbf{Real Food Trade} (\textbf{RFT}).
+Lo scopo principale di tale sistema è consentire ai pescatori di vendere i propri prodotti direttamente al consumatore finale,  tramite la pubblicazione di mercati temporanei.
+Questi mercati temporanei rappresentano dei punti di incontro, identificati da un orario ed un luogo, tra produttore e consumatore che rendono possibile la vendita diretta. 
+RFT è stato progettato ed implementato nelle tesi dei dottori L. Menichetti\cite{Reference5}, L. Nardini\cite{Reference6}, M. Ungania\cite{Reference7} (Università degli Studi Roma Tre).
 
-L'obbiettivo della presente tesi è quello di sfruttare i Linked Data per creare tecniche di ricerca semantica nel contesto di Real Food Trade. \`E stato dunque necessario studiare il sistema preesistente prima di creare il nuovo prototipo che ne rappresenta una porzione limitata al settore di interesse.
+L'obbiettivo della presente tesi è quello di sfruttare i Linked Data per aggiungere tecniche di ricerca semantica nel contesto di Real Food Trade. \`E stato dunque necessario studiare il sistema preesistente prima di creare il nuovo prototipo che ne rappresenta una porzione limitata al settore di interesse.
 In questo capitolo sono descritte le funzionalità e i requisiti del sistema completo ed in seguito le funzionalità e le scelte progettuali adottate per la realizzazione del prototipo. Si è cercato di mantenere una continuità con la nomenclautra adottata nei lavori precedenti.
+\newpage
 \section{Utenti}
 Segue una lista degli attori che svolgono funzioni nel sistema.
 \begin{itemize}
@@ -373,6 +374,7 @@ Il sistema si appoggia su una tassonomia delle specie ittiche, la cui architettu
 La funzione di ricerca si rende necessaria durante diverse operazioni. Quando un venditore inserisce un prodotto, deve specificare a quale specie appartiene, in questo modo i clienti possono raggiungere un prodotto indicando una specie della tassonomia. Gli utenti indicano una specie, passando dalla ricerca semantica. Emerge come sia necessario implementare le funzionalità di inserimento e gestione dei \textit{Flash Stand} e \textit{Stand Product} da parte dei \textit{Seller} e di ricerca di questi da parte dei \textit{Customer}.
 
 Ovviamente nasce l'esigenza di differenziare l'esperienza utente sulla base del ruolo. Vengono quindi implementate funzioni base di registrazione ed autenticazione. Gli utenti sono quelli definiti nel capitolo precedente, ai fini del prototipo l'utente \textit{Admin} non compare come attore di alcuna attività.
+\newpage
 \subsection{Casi d'uso}
 Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzionalità di RFT. Di seguito sono riportati i casi d'uso individuati necessari all'implementazionde delle funzionalità minime necessarie.
 \paragraph{Registrazione}Un nuovo utente si registra nel sistema come \textit{Seller} o \textit{Customer}. \\ 
@@ -447,43 +449,44 @@ Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzi
 \hline 
 \end{tabular}
 	
-\chapter{Progettazione del prototipo}
+\chapter{Modello dei dati}
+In questo capitolo è illustrato il modello dei dati del sistema prototipale realizzato. Il primo passo è stato individuare il modello concettuale, per poi aggiungere gli elementi semantici.
 
-
-\section{Modello dei dati}
-Segue il modello dei dati che modellizza le entità coinvolte dalle funzionalità implementate nel prototipo.
+\section{Modello concettuale}
+Il modello concettuale rappresenta le entità e le relazioni tra di esse tramite una rappresentazione che deve essere indipendente dai dettagli dell'implementazione.
+Segue il diagramma del modello dei dati del prototipo e una la descrizione delle entità coinvolte.
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{datamodel}
+	\includegraphics[width=8.5cm]{datamodel}
 	\caption{Modello dei dati del prototipo RFT}
 	\label{datamodel}
 \end{figure}
-\subsection*{Flash Stand}
+\subsubsection{Flash Stand}
 Rappresenta un mercato temporaneo creato da un \textit{Seller} e ad esso appartiene. Un \textit{Seller} non può avere più di un \textit{Flash Stand} con la stessa posizione geografica e fascia oraria. Un FS può contenere uno o più \textit{Stand Product}.
 
 Gli attributi che rappresentano la posizione geografica sono \textit{latitudine} e \textit{longitudine}.
 
 Gli attributi \textit{oraInizio} e \textit{oraFine} specificano la fascia oraria di attività. Non è obbligatoria una durata minima, l'importante è che sia rispettata la condizione:\\ $\textit{oraFine} \geq \textit{oraInizio}$. Con riferimento all'istante attuale \textit{t}, un FS può trovarsi in tre stati. Se $t < \textit{oraFine}$ si dice che il \textit{Flash Stand} è ``\textbf{attivo}'', mentre si dice ``\textbf{scaduto}'' se $t \geq \textit{oraFine}$. Un FS si dice ``\textbf{in corso}'' se\\ $oraInizio < t < oraFine$ (un FS ``in corso'' è anche ``attivo'').
-\subsection*{Stand Product}
+\subsubsection{Stand Product}
 Rappresenta un prodotto pubblicato da un \textit{Seller} in un suo \textit{Flash Stand}. Ad esso è associato un \textit{Type}, che indica il tipo di prodotto, ovvero la specie ittica alla quale fa riferimento nella tassonomia.
 
 L'attributo \textit{quantità} indica la quantità disponibile alla vendita in una particolare unità di misura (chilogrammi, litri, inità,ecc...). La quantità specificata può essere ``\textbf{prevista}'' o ``\textbf{reale}''.
 
 Ogni prodotto deve avere un \textit{prezzo}, specificato nella quantità di misura. Il prezzo dovrebbe essere espresso nella moneta corrente della nazione in cui il FS è localizzato.
 
-\subsection*{Type}
+\subsubsection{Type}
 Rappresenta una specie nella tassonomia di riferimento. \`E l'entità che crea un collegamento tra una precisa specie ittica e un prodotto pubblicato su RFT.
-\subsection*{User}
+
+A questo livello non siamo interessati ai dettagli implementativi, basti dire che questo collegamento esiste. Nella seconda parte del capitolo viene descritta la semantica aggiunta al modello dei dati e risulterà più chiaro il significato di questa enità.
+\subsubsection{User}
 Entità che modellizza gli utenti di RFT. Le categorie di utenti sono quelle già definite nella descrizione del sistema completo: \textit{Admin}, \textit{Seller}, \textit{Customer}.
+\section{Semantica aggiunta}
+RFT si basa su un modello semantico dei dati, che di seguito chiameremo \textit{indice}. Ogni elemento dell'indice, che chiamiamo \textit{nodo}, rappresenta una specie ittica. Ogni prodotto pubblicato su RFT deve essere mappato con un nodo. In questo modo si ha una corrispondeza univoca tra prodotto e specie. L'indice inoltre tiene traccia di informazioni aggiuntive che consentono la ricerca semantica dei prodotti.
 
-
-\chapter{Modello semantico dei dati}
-RFT si basa su un modello semantico dei dati, che di seguito chiameremo \textit{indice}. Ogni elemento dell'indice rappresenta una specie ittica ed ogni prodotto pubblicato su RFT deve essere mappato con un elemento dell'indice. In questo modo si ha una corrispondeza univoca tra prodotto e specie. L'indice inoltre tiene traccia di informazioni aggiuntive che consentono la ricerca semantica dei prodotti.
-
-In questo capitolo illustreremo le scelte progettuali dell'indice, i dataset di partenza utilizzati per la sua creazione e le potenzialità di questa struttura dati.
-\section{Dataset di partenza}
+In questa sezione illustreremo le scelte progettuali dell'indice, i dataset di partenza utilizzati per la sua creazione e le potenzialità di questa struttura dati.
+\subsection{Dataset di partenza}
 Le informazioni utilizzate per la costruzione dell'indice provengono da due fonti: la tassonomia definita dalla FAO e DBpedia.org.
-\subsection{Tassonomia ASFIS-FAO}
+\subsubsection{Tassonomia ASFIS-FAO}
 Una tassonomia è una classificazione dei concetti in questione, le specie viventi nel nostro caso, in una gerarchia di unità tassonomiche annidate. Un'unità tassonomica, o taxa, è un raggruppamento di organismi reali, distinguibili morfologicamente e geneticamente da altri e riconoscibili come unità sistematica, posizionata all'interno della struttura gerarchica della classificazione scientifica.
 
 La fonte primaria è l'ontologia delle specie ittiche distribuita dall'ASFIS\footnote{Aquatic Science and Fisheries Information System} a cura della FAO\footnote{Food and Agriculture Organization of the United Nations}. Tale ontologia contiene informazioni riguardo la classificazione tassonomica di 12600 entità biologiche e viene distribuita in formato OWL.
@@ -513,7 +516,7 @@ Ogni nodo è costituito da diversi dettagli. Segue una lista dei campi che descri
 	\item \textbf{3-alpha code}\\\`E un codice identificativo interno all'agenzia ASFIS costituito da tre lettere. Generalmente i tre caratteri sono scelti in maniera casuale, solo in alcuni casi sono legati al nome scientifico o inglese;
 	\item \textbf{ID}\\Codice numerico univoco.
 \end{itemize}
-\subsection{DBpedia}
+\subsubsection{DBpedia}
 DBpedia è un progetto nato nel 2007 e tuttora in corso, per l'estrazione di informazioni strutturate da Wikipedia e per il rilascio di queste informazioni sul Web come Linked Data in formato RDF.
 Il progetto nacque da una collaborazione tra le due università \textit{Free University of Berlin} e \textit{University of Leipzig} e la società americana \textit{OpenLink Software}.
 
@@ -523,7 +526,7 @@ DBpedia è stato descritto da Tim Berners-Lee come una delle parti più famose del
 
 Il dataset di DBpedia contiene 4,58 milioni di entità, di cui 4,22 sono classificati in un'ontologia consistente. Per avere un idea della vastità del dataset, si pensi che e risorse descritte comprendono 1.445.000 persone, 735.000 luoghi, 123.000 album musicali, 241.000 organizzazioni e 251.000 specie. Sono riportate informazioni in 125 lingue differenti, 25,2 milioni di link ad immagini e 29,8 milioni di link a pagine web esterne.
 Il grafo RDF che rappresenta le informazioni estratte è costituito da 3 miliardi di triple e contiene circa 50 milioni di link  ad altri dataset RDF.
-\section{Indice delle specie}
+\subsection{Indice delle specie}
 Chiamiamo \textit{indice} o \textit{indice delle specie} la struttura dati che rappresenta la tassonomia di riferimento per Real Food Trade. Ci riferiremo con il termine \textit{nodo} invece, per indicare un elemento, ovvero una specie, dell'indice.
 
 Questa struttura dati è costruita estraendo informazioni dalle fonti appena descritte: la tassonomia fornita dalla FAO e DBpedia. Non è definito un link diretto tra una risorsa FAO e la corrispondete in DBpedia (se esite), si è dovuto quindi individuare un campo per realizzare questo mapping. \`E stato scelto il nome scientifico, in quanto univoco e presente in entrambi i dataset di partenza. Il mapping è necessario per l'estrazione di informazioni dalle due fonti eterogenee e la loro unificazione nella nuova struttura dati.
@@ -531,17 +534,17 @@ Questa struttura dati è costruita estraendo informazioni dalle fonti appena desc
 Si noti che non tutte le specie definite nella tassonomia FAO hanno una corrispondente risorsa in DBpedia.
 Al momento della creazione dell'indice, vengono inserite tutte le specie presenti nell'ontologia FAO, arricchendole con le informazioni estraibili da DBpedia, se presenti.
 
-\subsection{Informazioni rappresentate}
+\subsubsection{Informazioni rappresentate}
 L'indice di fatto è una collezione di nodi, implementata in Java tramite la struttura dati ArrayList. Per ogni specie vengono estratte le seguenti informazioni:
 \begin{itemize}
-	\item \textbf{ID FAO}
+	\item \textbf{ID FAO}\\Identificativo nella tassonomia FAO. Questo valore univoco viene utilizzato per mappare un uno \textit{Stand Product} con una specie ittica, implementando l'entità Type descritta nel modello dei dati;
 	\item \textbf{URI FAO}\\URI nella tassonomia FAO.\\Esempio: \texttt{http://www.fao.org/aims/aos/fi/species\_taxonomic.owl\#ID\_31005\_2118};
 	\item \textbf{URI DBpedia}\\URI della risorsa DBpedia.\\Esempio:\texttt{http://dbpedia.org/resource/Coho\_salmon};
 	\item \textbf{Nome scientifico}
 	\item \textbf{Nomi comuni}\\Vengono estratti i nomi in inglese, francese e spagnolo dalla tassonomia FAO. Da DBpedia vengono estratti tutti i nomi rappresentati dalla proprietà \texttt{foaf:name}. Per ogni nome viene memorizzato anche il linguaggio tramite un \textit{language tag} (it,en,fr,ecc...);
 	\item \textbf{Immagine}\\URL dell'immagine nel rispettivo articolo Wikipedia. Viene riportato nella risorsa DBpedia dalla proprietà \texttt{foaf:depiction}.
 \end{itemize}
-\paragraph{Proprietà estratte}
+\subsubsection{Proprietà estratte}
 Ai fini delle tecniche di ricerca semantica, si rende necessario l'estrazione dei valori assunti da specifiche proprietà dei grafi di partenza. Dopo un'attenta analisi delle possibili scelte, si è deciso di estrarre le tre proprietà seguenti:
 \begin{itemize}
 	\item \texttt{taxonomic:hasHigherRank}
