@@ -1,12 +1,7 @@
 \documentclass[11pt,a4paper]{report}
 \linespread{1.4}
 \newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
-%\setlrmarginsandblock{3cm}{3cm}{*}
-% profondità dell'indice (settato per stampare fino alle sottosezioni)
-%\setcounter{tocdepth}{2}
-% numera parti, capitoli, sezioni, sottosezioni e sotto-sottosezioni
-%\maxsecnumdepth{subsubsection}
-%\setsecnumdepth{subsubsection}
+
 
 %Lettere accentate
 \usepackage[latin1]{inputenc}
@@ -45,8 +40,9 @@ L'argomento di studio principale di questo lavoro è il web semantico. Questo ter
 Questo richiede che i documenti pubblicati (pagine HTML, file, immagini, ecc...) siano definiti in un formato adatto all'interrogazione e l'interpretazione e, più in generale, all'elaborazione automatica.
 
 Nel caso specifico, siamo interessati alle possibilità di effettuare ricerche molto più evolute delle attuali, basate sulla presenza nel documento di parole chiave, e alla costruzione di reti di relazioni e connessioni tra documenti secondo logiche più elaborate del semplice collegamento ipertestuale.
+\newpage
 \section{Obbiettivi e modalità di lavoro}
-L'obbiettivo principale del lavoro svolto è quello di realizzare un prototipo per il sistema \textbf{Real Food Trade} (\textbf{RFT}) definito nei tesi dei dottori L. Menichetti\cite{Reference5}, L. Nardini\cite{Reference6}, M. Ungania\cite{Reference7} presso l'Università degli Studi Roma Tre.
+L'obbiettivo del lavoro svolto è quello di realizzare un prototipo per il sistema \textbf{Real Food Trade} (\textbf{RFT}) definito nelle tesi dei dottori L. Menichetti\cite{Reference5}, L. Nardini\cite{Reference6}, M. Ungania\cite{Reference7} presso l'Università degli Studi Roma Tre.
 Si tratta di una piattaforma per la compravendita di prodotti ittici, il cui compito fondamentale è quello di consentire ai pescatori di organizzare punti di vendita temporanei per il consumatore finale, saltando di fatto gli intermediari.
 
 In questo contesto, sfrutteremo le potenzialità del web semantico per implementare tecniche di ricerca che sfruttino la semantica delle specie ittiche gestite dal sistema.
@@ -80,7 +76,7 @@ I principali standard attravero i quali il Web è implementato sono:
 \item URL: lo schema di identificazione, e quindi di rintracciabilità, dei contenuti e dei servizi del Web.
 \end{itemize}
 Il Web è un'enorme rete di documenti collegati tra loro da link ipertestuali.
-I dati pubblicati possono essere utilizzati sia da utenti umani, che da agenti software.
+I dati pubblicati possono essere utilizzati sia da utenti umani che da agenti software.
 \subsection*{Limiti del Web}
 
 
@@ -93,17 +89,17 @@ A questo punto le macchine sono in grado di eseguire ricerche migliori grazie al
 
 Le specifiche XML hanno però una lacuna molto importante: non definiscono alcun meccanismo univoco e condiviso per specificare relazioni tra informazioni espresse sul web, condizione necessaria per l'elaborzione automatica.
 
-Anche in questo caso la soluzione al problema è venuta dal W3C di Berners-Lee, attraverso la formalizzazione del web semantico.
+Anche in questo caso la soluzione al problema è venuta dal W3C di Berners-Lee, attraverso la formalizzazione del Web semantico.
 
-\subsection*{Il Web Semantico}
-Con il termine web semantico, termine coniato dal suo ideatore, Tim Berners-Lee, si intende la trasformazione del World Wide Web in un ambiente dove i documenti pubblicati (pagine HTML, file, immagini, e così via) sono associati ad informazioni e dati (metadati) che ne specificano il contesto semantico in un formato adatto all'interrogazione e l'interpretazione (es. tramite motori di ricerca) e, più in generale, all'elaborazione automatica.
+\subsection*{Il Web semantico}
+Con il termine Web semantico, termine coniato dal suo ideatore Tim Berners-Lee, si intende la trasformazione del World Wide Web in un ambiente dove i documenti pubblicati (pagine HTML, file, immagini, e così via) sono associati ad informazioni e dati (metadati) che ne specificano il contesto semantico in un formato adatto all'interrogazione e l'interpretazione (es. tramite motori di ricerca) e, più in generale, all'elaborazione automatica.
 
 L'enfasi viene spostata dalla sola sintassi, interpretabile esclusivamente dall'essere umano, alla semantica, ovvero al contenuto dei documenti, per consentire l'interpretazione di questi anche ai computer. Il tentativo di rendere comprensibile i contenuti alle applicazioni ha lo scopo di permettere ricerche molto più evolute delle precedenti, che erano basate solo sulla presenza di parole chiave, e altre operazioni specialistiche come la costruzione di reti di relazioni e connessioni tra documenti secondo logiche più elaborate del semplice collegamento ipertestuale.
 
-Alla creazione di una pagina web, le informazioni in esse contenuta andranno dichiarate sencondo precise regole semantiche (da qui il termine Web Semantico). Nasce dunque l'esigenza di definire un nuvo modo di strutturare i dati. \`E stato sviluppato a questo scopo un insieme di principi e tecnologie, conosciuti come Linked Data.
+Alla creazione di una pagina web, le informazioni in esse contenuta andranno dichiarate sencondo precise regole semantiche (da qui il termine Web semantico). Nasce dunque l'esigenza di definire un nuvo modo di strutturare i dati. A questo scopo è stato sviluppato un insieme di principi e tecnologie conosciuti come Linked Data.
 \section{Linked Data}
-Il temrine \textit{Linked Data} indica un insieme di \textit{best practices} per la pubblicazione di dati strutturati che possono essere tra loro collegati e in questo modo diventare frubili per interrogazioni semantiche. Questo termine fu coniato da Tim Berners-Lee nel \textit{design note} del 2006\cite{Reference2} riguardante il progetto del web semantico.
-I Linked Data vennero poi presentati alla conferenza TED\footnote{TED (Technology Entertainment Design) è una conferenza che si tiene ogni anno ed abbraccia una vasta gamma di arogmenti che comprendono scienza, arte, politica e altro.} del 2009.
+Il temrine \textit{Linked Data} indica un insieme di \textit{best practices} per la pubblicazione di dati strutturati che possono essere tra loro collegati e in questo modo diventare frubili per interrogazioni semantiche. Questo termine fu coniato da Tim Berners-Lee nel \textit{design note} del 2006\cite{Reference2} riguardante il progetto del Web semantico.
+I Linked Data vennero poi presentati alla conferenza TED\footnote{TED (Technology Entertainment Design) è una conferenza che si tiene ogni anno ed abbraccia una vasta gamma di argomenti che comprendono scienza, arte, politica e altro.} del 2009.
 \subsection*{Componenti}
 I componenti che vengono utilizzati per implementare i Linked Data sono:
 \begin{itemize}
@@ -152,6 +148,7 @@ tutta l'infrastruttura si basa su standard e un data model comune, diventa possi
 implementare generiche applicazioni che operano su tutto lo spazio dei dati. In poche
 parole i principi dei Linked Data posano le fondamenta per estendere il Web con uno
 spazio globale dei dati basato sugli stessi principi architetturali del Web classico.
+\newpage
 \subsection*{Linked Data Cloud}
 Uno degli obbiettivi del W3C è quello di estendere il Web con informazioni condivise pubblicando diversi dataset in formato Linked Data e collegando le risorse appartenteni a dataset diversi.
 Quello che si ottiene è una rete enorme ed in continua espansione di dati, costituita da tutti i dataset pubblicati in formato Linked Data che prende il nome di Linked Data Cloud.
@@ -179,33 +176,32 @@ sempre più vasta.
 Il Resource Description Framework (RDF) è un linguaggio, proposto dal W3C, per rappresentare informazioni sulle risorse nel Web.
 Viene descritto nei dettagli nel documento delle specifiche RDF Primer\cite{Reference3}, di cui questa sezione vuole esserne un riassunto.
 
-L'intento principale era quello di rappresentare i metadati di risorse Web, come per esempio il titolo, l'autore o la data dell'ultima modifica di una pagina Web. Generalizzando il concetto di ``risorsa Web'', RDF può essere utilizzato per rappresentare informazioni riguardanti cose che possono essere \textit{identificate} nel Web, anche quando queste non sono direttamente recuperabili nella rete.
+L'intento principale era quello di rappresentare i metadati di risorse Web, come per esempio il titolo, l'autore o la data dell'ultima modifica di una pagina Web. Generalizzando il concetto di ``risorsa Web'', RDF può essere utilizzato per rappresentare informazioni riguardanti cose che possono essere identificate nel Web, anche quando queste non sono direttamente recuperabili nella rete.
 
 RDF nasce per essere utilizzato in quei contesti in cui le informazioni devono essere processati da applicativi, invece che essere semplicemente mostrati agli utenti umani. Viene messo a disposizione un framework comune per esprimere queste informazioni, in modo tale da poterle condividere tra diverse applicazioni senza perdita di significato. In particolare questo significa che le informazioni possono essere messe a disposizione di programmi diversi da quelli per i quali erano state originariamente create.
 
 L'idea base di RDF è identificare gli oggetti tramite URI e descrivere le risorse in termini di proprietà.
-
 Questo consente di rappresentetare statement sulle risorse come un grafo di nodi ed archi etichettati.
-
+\\
 RDF è costituito da due componenti:
 \begin{itemize}
-	\item RDF Model: espone la struttura del modello RDF e descrive una possibile sitassi.
+	\item RDF Model: espone la struttura del modello RDF e descrive una possibile sitassi;
 	\item RDF Schema: espone la sitassi per definire schemi e vocabolari per i metadati.
 \end{itemize}
 \subsection*{RDF Model}
-RDF si basa sull'idea che gli oggetti descritti hanno delle proprietà che hanno dei valori e le risorse vengono descritte tramite statements che specifiano quali proprietà e quali valori posseggono.
+RDF si basa sull'idea che gli oggetti descritti hanno delle proprietà che assumono dei valori e le risorse vengono descritte tramite statements che specifiano quali proprietà e quali valori posseggono.
 Uno statement RDF è una tripla costituita da:
 \begin{itemize}
 	\item soggetto: è lo URI che identifica la risorsa cui lo statement fa riferimento;
-	\item predicato: è lo URI che identifica la proprietà, indica quale relazione esiste tra il soggetto e l'oggetto.
+	\item predicato: è lo URI che identifica la proprietà, indica quale relazione esiste tra il soggetto e l'oggetto;
 	\item oggetto: identifica il valore assunto dalla proprietà.
 \end{itemize}
 Gli URI appartengono a set di URI che prendono il nome di vocabolari. Generalmente gli URI in questi vocabolari sono organizzati in modo tale da poter essere rappresentati come un insieme di QName usando un prefisso comune. Questo significa che gli URI appartenenti ad uno stesso vocabolario condividono lo stesso namespace.
-
+\\
 A seconda del tipo di oggetto, si distinguono due tipi di triple RDF:
 \begin{itemize}
-	\item triple letterali : l'oggetto è un RDF literal, ovvero un valore costante come una stringa o un intero. Vengono utilizzate per descrivere proprietà come l'età o il nome di una persona. I literal possono essere plain o typed. Un plain literal è costituito da una stringa e da un tag per che identifica la lingua. Un typed literal è costituito da una stringa e da un datatype URI che ne identifica il datatype. Per rappresentare interi,float o altri tipi numerici possiamo usare i datatpye definiti da XML schema.
-	\item link RDF: l'oggetto è uno URI. Vengono utilizzate per descrivere la relazione tra due risorse.
+	\item \textbf{Triple letterali}\\L'oggetto è un RDF literal, ovvero un valore costante come una stringa o un intero. Vengono utilizzate per descrivere proprietà come l'età o il nome di una persona. I literal possono essere plain o typed. Un plain literal è costituito da una stringa e da un tag che ne identifica la lingua. Un typed literal è costituito da una stringa e da un datatype URI che ne identifica il datatype. Per rappresentare interi, float o altri tipi numerici possiamo usare i datatpye definiti da XML schema.
+	\item \textbf{Link RDF}\\L'oggetto è uno URI. Vengono utilizzate per descrivere la relazione tra due risorse.
 	Un link RDF può essere interno od esterno. Un link interno mette in relazione due risorse appartenenti alla stessa sorgente Linked Data, mentre un link esterno due risorse appartenenti a differenti namespace.
 \end{itemize}
 La seguente frase in italiano:\\
@@ -226,29 +222,27 @@ Un insieme di triple può essere visto quindi come un grafo, chiamato grafo RDF i
 	\label{tripla_esempio}
 \end{figure}
 \subsection*{RDF Schema}
-Le risorse descritte possono essere classificate in categorie, questa idea è simile al concetto di Classi e Oggetti nei linguaggi di programmazione orientati agli oggetti. Questo concetto viene supportato da RDF tramite una proprietà predefinita, \texttt{rdf:type}. Quando una risorsa RDF è descritta con una proprietà \texttt{rdf:type}, il valore di quella proprietà è una risorsa che rappresenta la classe del soggetto descritto. Il soggetto invece è da considerarsi una instanza di quella classe.
+Le risorse descritte possono essere classificate in categorie, questa idea è simile al concetto di Classi e Oggetti nei linguaggi di programmazione orientati agli oggetti. Questo concetto viene supportato da RDF tramite la proprietà predefinita \texttt{rdf:type}. Quando una risorsa RDF è descritta con una proprietà \texttt{rdf:type}, il valore di quella proprietà è una risorsa che rappresenta la classe del soggetto descritto. Il soggetto invece è da considerarsi una instanza di quella classe.
 
-RDF consente di esprimere semplici triple sulle risorse, usando proprietà con un nome e valori. Tuttavia vi è la necisstà da parte degli utilizzatori di definire i vocabolari che intendono usare nelle loro triple, in particolare per indicare che stanno descrivendo specifiche classi di risorse trami tel'utilizzo di specifiche proprietà. RDF non permette di definire classi e proprietà, queste invece andranno descritte come un vocabolario RDF, usando le estensioni fornite dal \textit{RDF Vocabulary Description Language 1.0: RDF Schema}, al quale ci si riferisce semplicemente con \textit{RDF Schema}.
-
+RDF consente di esprimere semplici triple sulle risorse, usando proprietà con un nome e valori. Tuttavia vi è la necisstà da parte degli utilizzatori di definire i vocabolari che intendono usare nelle loro triple, in particolare per indicare che stanno descrivendo specifiche classi di risorse tramite l'utilizzo di specifiche proprietà. RDF non permette di definire classi e proprietà, queste invece andranno descritte come un vocabolario RDF, usando le estensioni fornite dal \textit{RDF Vocabulary Description Language 1.0: RDF Schema}, al quale ci si riferisce semplicemente con \textit{RDF Schema}.
 RDF Schema consente di descrivere classi e proprietà e di indicare quali di queste saranno usate insieme. In altre parole, RDF Schema fornisce un \textit{type system} per RDF. Questo type system è simile, sotto certi punti di vista, con quello dei linguaggi orientati agli oggetti, come Java. Per esempio, RDF Schema consente alle risorse di essere instanze di più classi. Inoltre consente una organizzazione gerarchica delle classi. Le classi RDF, però sono diverse da quelle dei linguaggi di programmazione. Una classe RDF non forza le informazioni in una particolare struttura, ma si limita invece ad aggiungere informazioni supplementari per le risorse RDF che descrive.
 \subsection*{Serializzazione}
 Con il termine serializzazione ci si riferisce alla rappresentazione fisica di un grafo RDF. Esistono diversi tipi di serializzazione, tra cui:
 \begin{itemize}
 	\item Turtle: un formato compatto e \textit{human-friendly};
 	\item Notation3 (N3): tecnica non standard di serializzazione, molto simile a Turtle, ma con caratterstiche aggiuntive, come la possibilità di definire delle regole di inferenza;
-	\item RDF/XML: è il primo formato standard per serializzare RDF, usa un sintassi \textit{XML-based}.
+	\item RDF/XML: è il primo formato standard per serializzare RDF, usa una sintassi \textit{XML-based}.
 \end{itemize}
 \section{OWL}
 OWL (\textbf{O}ntology \textbf{W}eb \textbf{L}anguage) è un linguaggio di markup per rappresentare esplicitamente significato e semantica di termini con vocabolari e relazioni tra gli stessi.
-La rappresentazione dei termini e dele relative relazioni è chiamata \textit{ontologia}.
-
+La rappresentazione dei termini e delle relative relazioni è chiamata \textit{ontologia}.
 OWL consente di effettuare deduzioni sulle ontologie che permette di descrivere, integrandole con i contenuti delle pagine Web.
 \subsection*{Sottolinguaggi}
-Esistono tre sottolinguaggi OWL, in ordine di crescente espressività:
+Esistono tre sottolinguaggi OWL, di seguito riportati in ordine di crescente espressività:
 \begin{itemize}
 \item OWL Lite: fornisce l'espressività base per una classificazione gerarchica e vincoli semplici;
-\item OWL DL: contiente tutti i costrutti OWL, ma possono essere usati solo entro certe restrizioni. Sin rivolge agli utenti che desiderano la massima espressività mantendendo la completezza computazionale e la decidibilità;
-\item OWL Full: fornisce la massima espressività e la libertà sintattica sintattica di RDF, ma senza garanzie computazionali. Non esiste un software in grado di supportare il ragionamento completo su tutte le caratteristiche di OWL Full.
+\item OWL DL: contiente tutti i costrutti OWL, ma possono essere usati solo entro certe restrizioni. Si rivolge agli utenti che desiderano la massima espressività mantendendo la completezza computazionale e la decidibilità;
+\item OWL Full: fornisce la massima espressività e la libertà sintattica di RDF, ma senza garanzie computazionali. Non esiste un software in grado di supportare il ragionamento completo su tutte le caratteristiche di OWL Full.
 \end{itemize}
 \section{SPARQL}
 SPARQL (acronimo ricorsivo per \textbf{S}PARQL \textbf{P}rotocol \textbf{a}nd \textbf{R}DF \textbf{Q}uery \textbf{L}anguage) è un linguaggio di interrogazione per basi di dati RDF.
@@ -259,28 +253,29 @@ SPARQL consente la definizione di query basate su triple pattern, congiunzioni, 
 \begin{tabular}{l l l}
 \texttt{soggetto} & \texttt{predicato} & \texttt{oggetto} \\ 
 \texttt{?fish} & \texttt{dct:subject} & \texttt{dbc:Fish\_of\_Asia} \\ 
-\end{tabular}\\
+\end{tabular}\\\\
 In questo esempio, l'unica variabile è il soggetto, mentre il predicato e l'oggetto sono costanti.
-Le query vengono poi risolte per pattern matching, questo significa che tra le triple RDF del data set al quale l'endpoint fa riferimento, quelle che trovano riscontro nel triple pattern specificato, assoceranno i propri valori alle incognite corrispondenti.
+Le query vengono poi risolte per pattern matching, questo significa che tra le triple RDF del data set al quale l'endpoint fa riferimento quelle che trovano riscontro nel triple pattern specificato assoceranno i propri valori alle incognite corrispondenti.
 \subsection*{Sintassi}
 La sintassi utilizzata è Turtle, un'estensione di N-triples.
-Una query SPARQL è la seguente:\\
+La struttura di una query SPARQL è la seguente:\\
 \texttt{PREFIX ...\\SELECT ...\\FROM ...\\WHERE\{\\...\\\}}\\
 \texttt{PREFIX} consente di dichiarare i prefissi per i namespace, in modo da alleggerire la scrittura e lettura delle query.\\
 \texttt{SELECT} precede l'elenco delle variabili di ricerca da includere nei risultati.\\
 \texttt{FROM} specifica il dataset da interrogare.\\
 La clausola \texttt{WHERE} consente di definire il criterio di selezione, specificando una o piu triple pattern tra parentesi graffe.\\
 In coda alla query, si possono aggiungere i cosiddetti \textit{query modifier}, come per esempio il costrutto \texttt{ORDER BY che} consente di ordinare i risultati secondo il criterio desiderato.
+\newpage
 \subsection*{Risultati}
 I risultati sono forniti in diversi formati:
 \begin{itemize}
 \item XML: utilizzando un particolare vocabolario XML;
 \item JSON: versione JSON del vocabolario XML, utile per applicazioni Web;
-\item RDF: utilizzandon una delle serializzazioni;
+\item RDF: utilizzando una delle serializzazioni;
 \item HTML: visualizzazione human-friendly di uno dei formati precedenti (tipicamente XML).
 \end{itemize}
 \subsection*{Esempio}
-Il seguente esempio è un'interrogazione SPARQL che modella la domanda: ``Quali sono tutte le capitali in Africa?''.\\
+Il seguente esempio è un'interrogazione SPARQL che modella la domanda: ``Quali sono tutte le capitali in Africa?''\\
 \texttt{PREFIX abc: <http://example.com/exampleOntology\#>\\
 SELECT ?capital ?country\\
 WHERE \{\\
@@ -340,7 +335,7 @@ Per prima cosa le prenotazioni di un cliente relativi a più prodotti dello stess
 Il sistema deve essere in grado di gestire le quantità in tempo reale, decurtando dalla disponibilità di un prodotto le quantità prenotate. Nel caso in cui i clienti effettuino ordini per un prodotto la cui quantità è stimata, potrebbe accadere che la quantità reale, inserita a posteriori dal venditore, non copra le richieste già ricevute. Per risolvere questa situazione, il sistema dovrà essere dotato di un meccanismo di scheduling degli ordini che scelga, con un certo criterio, quali ordini rifiutare.
 Il cliente quindi è consapevole del rischio di un eventuale impossibilità dell'evasione di un ordine nel momento in cui prenota un prodotto con quantità prevista e non reale. Si rende quindi necessario anche un meccanismo di notifica per la conferma, o il rifiuto, degli ordini una volta inserita la quantità pescata dal venditore.
 
-Per ora, non è prevista la gestione dei pagamenti, RFT consente di prenotare prodotti che poi verranno ritirati e pagati di persona presso un \textit{Flash Stand}. \`E compito quindi del venditore indicare quali ordini sono stati ritirati e che quindi si possono considerare conclusi con successo e quali invece sono non lo sono.
+Per ora, non è prevista la gestione dei pagamenti, RFT consente di prenotare prodotti che poi verranno ritirati e pagati di persona presso un \textit{Flash Stand}. \`E compito quindi del venditore indicare quali ordini sono stati ritirati e che quindi si possono considerare conclusi con successo e quali invece non lo sono.
 \subsection*{Feedback}
 RFT consente ai \textit{Customer} e \textit{Seller} di lasciarsi un feedback reciproco relativo ad ogni ordine. Questo feedback è espresso da un voto su una scala prestabilita ed un eventuale messaggio testuale.
 
@@ -363,7 +358,7 @@ Vendendo direttamente al cliente, RFT elimina la figura del grossista, o almeno 
 Va chiarito che l'intenzione di RFT non è quella di eliminare definitivamente ogni forma di intermediazione. A questo proposito, infatti va evidenziato come l'utente \textit{Seller} sia un estensione dell'utente \textit{Customer}. Questo significa che un venditore può acquistare, e quindi rivendere successivamente, prodotti da altri venditori della comunità RFT. Entrando in un mercato come quello del caso Cileno, RFT avrà potenzialmente la capacità di eliminare l'intermediazione senza valore aggiunto, ovvero quella rappresentata da figure che si garantiscono un costo di acquisto alla fonte favorevole, grazie a posizioni di privilegio. Questi intermediari, rivendendo ai dettaglianti, detengono la maggior parte dei guadagni del mercato in questione, senza aver aggiunto valore alla merce, come può fare invece un intermediario che rivende in una zona diversa, assumendosi il costo del trasporto.
 RFT propone nuovi canali di vendita più convenienti ai produttori, limitando quindi la posizione di privilegio detenuta dai grossisti.
 \section{Prototipo}
-In questa sezione mostriamo le funzionalità minime implementate nella progettazione del prototipo e i casi d'uso individuati. Estendendo poi il prototipo si potrà giungere ad una versione completa del sistema, così come definita nel presente capitolo.
+In questa sezione mostriamo le funzionalità minime implementate nella progettazione del prototipo e i casi d'uso individuati.
 \subsection{Funzionalità implementate}
 Il sistema si appoggia su una tassonomia delle specie ittiche, la cui architettura viene descritta nel prossimo capitolo. Questa tassonomia è l'oggetto di riferimento per la ricerca semantica.
 
@@ -373,10 +368,14 @@ Ovviamente nasce l'esigenza di differenziare l'esperienza utente sulla base del 
 \newpage
 \subsection{Casi d'uso}
 Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzionalità di RFT. Di seguito sono riportati i casi d'uso individuati necessari all'implementazionde delle funzionalità minime necessarie.
-\paragraph{Registrazione}Un nuovo utente si registra nel sistema come \textit{Seller} o \textit{Customer}. \\ 
+\\
+\\
 \begin{tabular}{|l|p{4in}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Registrazione}}\\
+\hline Descrizione & Un nuovo utente si registra nel sistema come \textit{Seller} o \textit{Customer}.\\
 \hline Pre-condizioni & L'utente non è loggato. \\ 
-\hline Post-condizioni & Il nuovo utente viene inserito nel sistema. \\ 
+\hline Post-condizioni & Il nuovo utente viene inserito nel sistema. \\
 \hline Scenario principale & 	\begin{enumerate}
 		\item L'utente indica che vuole registrarsi.
 		\item Il sistema chiede l'inserimento di:
@@ -389,10 +388,12 @@ Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzi
 		\item L'utente conferma la registrazione.
 	\end{enumerate}  \\ 
 \hline 
-\end{tabular} 
-
-\paragraph*{Login}Un utente si autentica nel sistema.\\
+\end{tabular}
+\\\\
 \begin{tabular}{|l|p{4in}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Login}}\\
+\hline Descrizione & Un utente si autentica nel sistema.\\
 \hline Pre-condizioni & L'utente è registrato. \\ 
 \hline Post-condizioni & L'utente è autenticato. \\ 
 \hline Scenario principale & 	\begin{enumerate}
@@ -402,8 +403,11 @@ Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzi
 	\end{enumerate} \\ 
 \hline 
 \end{tabular}
-\paragraph{Creazione di un nuovo Flash Stand} Un utente \textit{Seller} inserisce un nuovo \textit{Flash Stand} nel sistema.\\
+\\\\\\\\
 \begin{tabular}{|l|p{4in}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Creazione di un nuovo Flash Stand}}\\
+\hline Descrizione & Un utente \textit{Seller} inserisce un nuovo \textit{Flash Stand} nel sistema.\\
 \hline Pre-condizioni &  L'utente è loggato come \textit{Seller}. \\ 
 \hline Post-condizioni & Un \textit{Flash Stand} è stato correttamente inserito nel sistema. \\ 
 \hline Scenario principale & \begin{enumerate}
@@ -417,9 +421,11 @@ Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzi
 \end{enumerate} \\ 
 \hline 
 \end{tabular}
-
-\paragraph{Aggiunta di un nuovo Stand Product}  Un utente \textit{Seller} pubblica un nuovo \textit{Stand Product} in un proprio \textit{Flash Stand}.\\
+\\
 \begin{tabular}{|l|p{4in}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Aggiunta di un nuovo Stand Product}}\\
+\hline Dewscrizione &  Un utente \textit{Seller} pubblica un nuovo \textit{Stand Product} in un proprio \textit{Flash Stand}.\\
 \hline Pre-condizioni &  L'utente è loggato come \textit{Seller}. L'utente ha almeno un FS attivo. \\ 
 \hline Post-condizioni & Il nuovo SP è correttamente inserito nel FS specificato. \\ 
 \hline Scenario principale & 	\begin{enumerate}
@@ -431,9 +437,11 @@ Ai fini del lavoro di tesi risulta superflua l'implementazione di tutte le funzi
 	\end{enumerate} \\ 
 \hline 
 \end{tabular}
-
-\paragraph{Ricerca di un Flash Stand} Un utente (tipicamente un \textit{Customer}, ma potrebbe essere anche un \textit{Seller}) cerca un FS che venda un certo prodotto.\\
+\\
 \begin{tabular}{|l|p{4in}|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Ricerca di un Flash Stand}}\\
+\hline Derscrizione & Un utente (tipicamente un \textit{Customer}, ma potrebbe essere anche un \textit{Seller}) cerca un FS che venda un certo prodotto.\\
 \hline Pre-condizioni & Nel sistema sono presenti FS attivi con SP inseriti. \\ 
 \hline Post-condizioni & Nessuna.\\ 
 \hline Scenario principale & \begin{enumerate}
@@ -450,23 +458,23 @@ In questo capitolo è illustrato il modello dei dati del sistema prototipale real
 
 \section{Modello concettuale}
 Il modello concettuale rappresenta le entità e le relazioni tra di esse tramite una rappresentazione che deve essere indipendente dai dettagli dell'implementazione.
-Segue il diagramma del modello dei dati del prototipo e una la descrizione delle entità coinvolte.
+Segue il diagramma del modello dei dati del prototipo e una descrizione delle entità coinvolte.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=8.5cm]{datamodel}
 	\caption{Modello dei dati del prototipo RFT}
 	\label{datamodel}
 \end{figure}
-\subsubsection{Flash Stand}
-Rappresenta un mercato temporaneo creato da un \textit{Seller} e ad esso appartiene. Un \textit{Seller} non può avere più di un \textit{Flash Stand} con la stessa posizione geografica e fascia oraria. Un FS può contenere uno o più \textit{Stand Product}.
+\subsubsection{Flash Stand (FS)}
+Rappresenta un mercato temporaneo creato da un \textit{Seller}, al quale appartiene. Un \textit{Seller} non può avere più di un \textit{Flash Stand} con la stessa posizione geografica e fascia oraria. Un FS può contenere uno o più \textit{Stand Product}.
 
 Gli attributi che rappresentano la posizione geografica sono \textit{latitudine} e \textit{longitudine}.
 
-Gli attributi \textit{oraInizio} e \textit{oraFine} specificano la fascia oraria di attività. Non è obbligatoria una durata minima, l'importante è che sia rispettata la condizione:\\ $\textit{oraFine} \geq \textit{oraInizio}$. Con riferimento all'istante attuale \textit{t}, un FS può trovarsi in tre stati. Se $t < \textit{oraFine}$ si dice che il \textit{Flash Stand} è ``\textbf{attivo}'', mentre si dice ``\textbf{scaduto}'' se $t \geq \textit{oraFine}$. Un FS si dice ``\textbf{in corso}'' se\\ $oraInizio < t < oraFine$ (un FS ``in corso'' è anche ``attivo'').
-\subsubsection{Stand Product}
+Gli attributi \textit{oraInizio} e \textit{oraFine} specificano la fascia oraria di attività. Non è obbligatoria una durata minima, l'importante è che sia rispettata la condizione: $\textit{oraFine} \geq \textit{oraInizio}$.\\Con riferimento all'istante attuale \textit{t}, un FS può trovarsi in tre stati. Se $t < \textit{oraFine}$ si dice che il \textit{Flash Stand} è ``\textbf{attivo}'', mentre si dice ``\textbf{scaduto}'' se $t \geq \textit{oraFine}$. Un FS si dice ``\textbf{in corso}'' se\\ $oraInizio < t < oraFine$ (un FS ``in corso'' è anche ``attivo'').
+\subsubsection{Stand Product (SP)}
 Rappresenta un prodotto pubblicato da un \textit{Seller} in un suo \textit{Flash Stand}. Ad esso è associato un \textit{Type}, che indica il tipo di prodotto, ovvero la specie ittica alla quale fa riferimento nella tassonomia.
 
-L'attributo \textit{quantità} indica la quantità disponibile alla vendita in una particolare unità di misura (chilogrammi, litri, inità,ecc...). La quantità specificata può essere ``\textbf{prevista}'' o ``\textbf{reale}''.
+L'attributo \textit{quantità} indica la quantità disponibile alla vendita in una particolare unità di misura (chilogrammi, litri, unità, ecc...). La quantità specificata può essere ``\textbf{prevista}'' o ``\textbf{reale}''.
 
 Ogni prodotto deve avere un \textit{prezzo}, specificato nella quantità di misura. Il prezzo dovrebbe essere espresso nella moneta corrente della nazione in cui il FS è localizzato.
 
@@ -476,6 +484,8 @@ Rappresenta una specie nella tassonomia di riferimento. \`E l'entità che crea un
 A questo livello non siamo interessati ai dettagli implementativi, basti dire che questo collegamento esiste. Nella seconda parte del capitolo viene descritta la semantica aggiunta al modello dei dati e risulterà più chiaro il significato di questa enità.
 \subsubsection{User}
 Entità che modellizza gli utenti di RFT. Le categorie di utenti sono quelle già definite nella descrizione del sistema completo: \textit{Admin}, \textit{Seller}, \textit{Customer}.
+\section{Modello logico}
+Il modello concettuale appena descritto si traduce poi nel modello logico. Nel caso specifico si è utilizzato una base di dati relazionale tramite DBMS MySQL. La base di dati rappresenta le entità coinvolte nel modello concettuale e a queste vanno aggiunti concetti semantici che sono nel seguito descritti.
 \section{Semantica aggiunta}
 RFT si basa su un modello semantico dei dati, che di seguito chiameremo \textit{indice}. Ogni elemento dell'indice, che chiamiamo \textit{nodo}, rappresenta una specie ittica. Ogni prodotto pubblicato su RFT deve essere mappato con un nodo. In questo modo si ha una corrispondeza univoca tra prodotto e specie. L'indice inoltre tiene traccia di informazioni aggiuntive che consentono la ricerca semantica dei prodotti.
 
@@ -483,9 +493,10 @@ In questa sezione illustreremo le scelte progettuali dell'indice, i dataset di p
 \subsection{Dataset di partenza}
 Le informazioni utilizzate per la costruzione dell'indice provengono da due fonti: la tassonomia definita dalla FAO e DBpedia.org.
 \subsubsection{Tassonomia ASFIS-FAO}
-Una tassonomia è una classificazione dei concetti in questione, le specie viventi nel nostro caso, in una gerarchia di unità tassonomiche annidate. Un'unità tassonomica, o taxa, è un raggruppamento di organismi reali, distinguibili morfologicamente e geneticamente da altri e riconoscibili come unità sistematica, posizionata all'interno della struttura gerarchica della classificazione scientifica.
+Una tassonomia è una classificazione dei concetti in questione, le specie viventi nel nostro caso, in una gerarchia di unità tassonomiche annidate. Un'unità tassonomica, o taxon, è un raggruppamento di organismi reali, distinguibili morfologicamente e geneticamente da altri e riconoscibili come unità sistematica, posizionata all'interno della struttura gerarchica della classificazione scientifica.
 
 La fonte primaria è l'ontologia delle specie ittiche distribuita dall'ASFIS\footnote{Aquatic Science and Fisheries Information System} a cura della FAO\footnote{Food and Agriculture Organization of the United Nations}. Tale ontologia contiene informazioni riguardo la classificazione tassonomica di 12600 entità biologiche e viene distribuita in formato OWL.
+\newpage
 \paragraph{Struttura}
 Una classificazione tassonomica rigorosa parte dal rango più in alto denominato ``vita'' fino agli strati più bassi ``specie'' e ``sottospecie''. La tassonomia in questione invece, non riporta tutte le informazioni tassonomiche, in quanto l'obbiettivo non è quello di fornire una tassonomia rigorosa, bensì quello di elencare le specie di pesci, crostacei, mammiferi e alghe che teoricamente possono essere target di pescatori\footnote{L'ontologia definisce tutto ciò che è ``pescabile'' indipendentemente dal fatto che sia legale o meno. Sarà compito del sistema RFT controllare che la legge sia rispettata dagli utilizzatori.}. L'ontologia definisce inizialmente i \textit{gruppi}, un \textit{gruppo} rappresenta una macro-categoria come pesci o molluschi. Ogni gruppo è rappresentato da un nodo nella tassonomia. Dai gruppi discendono gli \textit{ordini}, composti a loro volta dalle \textit{famiglie}, da cui seguono le \textit{specie}, ognugno dei quali costituisce un nodo tassonomico. Per ogni \textit{gruppo} quindi, la tassonomia definisce un albero a quattro livelli con la radice in \textit{gruppo}. La tassonomia ASFIS è costituita da 7 alberi che rappresentano i seguenti gruppi: PISCES, CRUSTACEA, MOLLUSCA, MAMMALIA, AMPHIBIA-REPTILIA, INVERTEBRATA AQUATICA, PLANTAE AQUATICAE.
 \paragraph{Proprietà}
@@ -512,18 +523,20 @@ Ogni nodo è costituito da diversi dettagli. Segue una lista dei campi che descri
 	\item \textbf{3-alpha code}\\\`E un codice identificativo interno all'agenzia ASFIS costituito da tre lettere. Generalmente i tre caratteri sono scelti in maniera casuale, solo in alcuni casi sono legati al nome scientifico o inglese;
 	\item \textbf{ID}\\Codice numerico univoco.
 \end{itemize}
+\newpage
 \subsubsection{DBpedia}
 DBpedia è un progetto nato nel 2007 e tuttora in corso, per l'estrazione di informazioni strutturate da Wikipedia e per il rilascio di queste informazioni sul Web come Linked Data in formato RDF.
 Il progetto nacque da una collaborazione tra le due università \textit{Free University of Berlin} e \textit{University of Leipzig} e la società americana \textit{OpenLink Software}.
 
 DBpedia consente agli utenti di effettuare query semantiche sulle relazioni e proprietà associate con le risorse di Wikipedia, compresi link ad altri dataset.
-DBpedia è stato descritto da Tim Berners-Lee come una delle parti più famose delgli sforzi per il Linked Data decentralizzato.
+
 \paragraph{Dataset} Gli articoli pubblicati su Wikipedia sono costituiti per la maggior parte da testo, ma includono anche informazioni strutturate, come informazioni di categorizzazione, immagini, coordinate geografiche e link a siti esterni. L'obbiettivo di DBpedia è quello di estrarre queste informazioni per inserirle in un dataset uniforme che può essere poi interrogato.
 
 Il dataset di DBpedia contiene 4,58 milioni di entità, di cui 4,22 sono classificati in un'ontologia consistente. Per avere un idea della vastità del dataset, si pensi che e risorse descritte comprendono 1.445.000 persone, 735.000 luoghi, 123.000 album musicali, 241.000 organizzazioni e 251.000 specie. Sono riportate informazioni in 125 lingue differenti, 25,2 milioni di link ad immagini e 29,8 milioni di link a pagine web esterne.
 Il grafo RDF che rappresenta le informazioni estratte è costituito da 3 miliardi di triple e contiene circa 50 milioni di link  ad altri dataset RDF.
+\newpage
 \subsection{Indice delle specie}
-Chiamiamo \textit{indice} o \textit{indice delle specie} la struttura dati che rappresenta la tassonomia di riferimento per Real Food Trade. Ci riferiremo con il termine \textit{nodo} invece, per indicare un elemento, ovvero una specie, dell'indice.
+Chiamiamo \textit{indice} o \textit{indice delle specie} la struttura dati che rappresenta la tassonomia di riferimento per Real Food Trade. Ci riferiremo con il termine \textit{nodo} invece, ad un elemento, ovvero una specie, dell'indice.
 
 Questa struttura dati è costruita estraendo informazioni dalle fonti appena descritte: la tassonomia fornita dalla FAO e DBpedia. Non è definito un link diretto tra una risorsa FAO e la corrispondete in DBpedia (se esite), si è dovuto quindi individuare un campo per realizzare questo mapping. \`E stato scelto il nome scientifico, in quanto univoco e presente in entrambi i dataset di partenza. Il mapping è necessario per l'estrazione di informazioni dalle due fonti eterogenee e la loro unificazione nella nuova struttura dati.
 
@@ -533,9 +546,9 @@ Al momento della creazione dell'indice, vengono inserite tutte le specie present
 \subsubsection{Informazioni rappresentate}
 L'indice di fatto è una collezione di nodi, implementata in Java tramite la struttura dati ArrayList. Per ogni specie vengono estratte le seguenti informazioni:
 \begin{itemize}
-	\item \textbf{ID FAO}\\Identificativo nella tassonomia FAO. Questo valore univoco viene utilizzato per mappare un uno \textit{Stand Product} con una specie ittica, implementando l'entità Type descritta nel modello dei dati;
+	\item \textbf{ID FAO}\\Identificativo nella tassonomia FAO. Questo valore univoco viene utilizzato per mappare uno \textit{Stand Product} con una specie ittica, implementando l'entità Type descritta nel modello dei dati;
 	\item \textbf{URI FAO}\\URI nella tassonomia FAO.\\Esempio: \texttt{http://www.fao.org/aims/aos/fi/species\_taxonomic.owl\#ID\_31005\_2118};
-	\item \textbf{URI DBpedia}\\URI della risorsa DBpedia.\\Esempio:\texttt{http://dbpedia.org/resource/Coho\_salmon};
+	\item \textbf{URI DBpedia}\\URI della risorsa DBpedia.\\Esempio: \texttt{http://dbpedia.org/resource/Coho\_salmon};
 	\item \textbf{Nome scientifico}
 	\item \textbf{Nomi comuni}\\Vengono estratti i nomi in inglese, francese e spagnolo dalla tassonomia FAO. Da DBpedia vengono estratti tutti i nomi rappresentati dalla proprietà \texttt{foaf:name}. Per ogni nome viene memorizzato anche il linguaggio tramite un \textit{language tag} (it,en,fr,ecc...);
 	\item \textbf{Immagine}\\URL dell'immagine nel rispettivo articolo Wikipedia. Viene riportato nella risorsa DBpedia dalla proprietà \texttt{foaf:depiction}.
@@ -553,7 +566,8 @@ Il cuore del lavoro di tesi è costituito dall'introduzione di tecniche di ricerc
 
 Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e la \textit{Ricerca per similarità}. Andiamo ora a descriverle nel dettaglio.
 \section{Ricerca per nome}
-	Per implementare la ricerca di un prodotto o di una specie in RFT si rende necessario un meccanismo per effettuare una ricerca sull'indice data una stringa. La ricerca per nome quindi torna il nodo dell'indice con il nome più simile alla chiave di ricerca.	
+	Per implementare la ricerca di un prodotto o di una specie in RFT si rende necessario un meccanismo per effettuare una ricerca sull'indice data una stringa. La ricerca per nome quindi torna il nodo dell'indice con il nome più simile alla chiave di ricerca.
+	\newpage
 	\subsection{Similarità tra stringhe}
 	La similarità tra stringhe viene calcolato con una metrica pubblicata in un articolo online\footnote{http://www.catalysoft.com/articles/StrikeAMatch.html} da Simon White. 
 	L'algoritmo è stato guidato da tre requisiti:
@@ -585,10 +599,10 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 		\begin{equation*}
 		 = \frac{2 \cdot 5}{5 +5} = 0.4
 		\end{equation*}
-	Possiamo quindi concludere che le due stringhe in questione hanno una similarità del 40 %.
+	Possiamo quindi concludere che le due stringhe in questione hanno una similarità del 40\%.
 	\subsection{Algoritmo}
 	L'utente inserisce una stringa e indica la lingua nella quale vuole effettuare la ricerca. Per ogni nodo dell'indice vengono considerati solo i nomi nella lingua utente ed il nome scientifico. Per ogni nome viene calcolata la similarità con la chiave di ricerca e la maggiore di queste viene associata al nodo. Al termine viene tornato il nodo con la similarità maggiore.
-
+\newpage
 \section{Ricerca per similarità}
 	La ricerca per similarità è un meccanismo che selezionato un nodo dell'indice, fornisce i nodi ad esso simili.	
 	La prima scelta da fare è definire cosa si intende per similarità. Tralasciando temporaneamente i formalisimi, possiamo dire che due specie sono simili se :
@@ -605,6 +619,7 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	Le prime due rappresentano le informazioni riguardanti la tassonomia, la terza le caratteristiche ad essa estranee.
 	
 	L'algoritmo utilizzato per il calcolo della similarità è il Vector Space Model (VSM). Questo modello utilizza una rappresentazione vettoriale delle proprietà coinvolte.
+	\newpage
 	\subsection{Vector Space Model}
 	Vector Space Model (VSM) è un modello algebrico per la rappresentazione di documenti testuali in forma vettoriale.
 	La similarità tra due documenti viene calcolata computando il coseno di similitudine tra i due vettori che li rappresentano.
@@ -659,7 +674,7 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	Il nostro caso viola le premesse dell'algoritmo originale in due punti:
 	\begin{itemize}
 	\item Consideriamo anche propriet\`a che hanno sia risorse che letterali come oggetto;
-	\item Per ogni proprietà (eccetto quelle definite nel grafo FAO) entrano in gioco due grafi: quello della FAO e quello al quale la proprietà appartiene.
+	\item Per ogni proprietà (eccetto quelle definite nel grafo FAO) entrano in gioco due grafi: quello della FAO e quello al quale la proprietà appartiene. Nel caso specifico solo DBpedia.org.
 	\end{itemize}
 	Sulla base di queste differenze sono state fatte le seguenti scelte:
 	\begin{itemize}
@@ -674,14 +689,14 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	sim(r_{i},r_{j}) =\frac{\displaystyle\sum_{p \in P} sim^p(r_{i},r_{j})}{|P|}
 	\end{equation*}
 	\subsection{Risultati sperimentali}
-	I test condotti hanno lo scopo di dimostrare l'effettiva utilità delle tecniche di ricerca implementate. Particolare enfasi è posta sull'utilizzo di proprietà non legate alla tassonomia, nel caso specifo è stata utilizzata solo la proprietà \texttt{dct:subject} .
-	La modularit\`a del codice, poi consente la facile inclusione di nuove propriet\`a, anche derivanti da grafi linked data diversi.
+	I test condotti hanno lo scopo di dimostrare l'effettiva utilità delle tecniche di ricerca implementate. Particolare enfasi è posta sull'utilizzo di proprietà non legate alla tassonomia, nel caso specifo  \texttt{dct:subject} .
+	La modularit\`a del codice, poi consente la facile inclusione di nuove propriet\`a, anche derivanti da grafi Linked Data diversi.
 	\subsubsection{Definizioni}
 	Si rendono necessarie alcune definizioni per poter illustrare i risultati dei test.
 	\begin{itemize}
-		\item \textbf{Higher Rank}\\Chiamiamo \textit{Higher Rank} (\textit{HR}) di una specie, una seconda specie che si trova in un livello superiore delle tassonomia.
+		\item \textbf{Higher Rank}\\Chiamiamo \textit{Higher Rank} (\textit{HR}) di una specie, una seconda specie di rango superiore.
 		\item \textbf{Higher Rank diretto}\\
-		Chiamiamo \textit{Higher Rank diretto} di una specie, la specie che si trova nel livello immediatamente superiore della tassonomia.
+		Chiamiamo \textit{Higher Rank diretto} di una specie, la specie di rango superiore direttamente collegata ad essa.
 	\end{itemize}
 	 Nei test eseguiti abbiamo misurato il numero di Higher Rank in comune tra i risultati di una ricerca semantica e la specie rispetto alla quale la ricerca fa riferimento.
 	Per semplicit\`a di notazione riportiamo solo gi ID dei nodi.\\
@@ -692,6 +707,14 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	\item \texttt{dct = http://purl.org/dc/terms/}
 	\item \texttt{dbc = http://dbpedia.org/resource/Category:}
 	\end{itemize}
+	\paragraph{Proprietà}
+	Ricordiamo che le proprietà rappresentate nell'indice sono:
+	\begin{itemize}
+		\item \texttt{taxonomic:hasHigherRank}
+		\item \texttt{taxonomic:hasDirectHigherRank}
+		\item \texttt{dct:subject}\\
+	\end{itemize}
+	\newpage
 	\subsubsection{Riordinamento dei risultati}
 	Utilizzando solo le prime due propriet\`a definite dalla ontologia FAO, l'unica metrica utilizzata per il calcolo della similarit\`a di due specie sarebbe la loro posizione nella tassonomia.
 	
@@ -700,11 +723,10 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	
 	L'introduzione di una propriet\`a indipendente dalla tassonomia consente un loro riordinamento.
 	\paragraph{Esempio}
-	Consideriamo il nodo \texttt{14545}, uri DBpedia: \texttt{dbr/Maroon\_clownfish}.\\\\
-	Ricerca semantica per il nodo \texttt{14545} utilizzando solo le propriet\`a FAO:\\\\
+	Consideriamo il nodo \texttt{14545}, uri DBpedia: \texttt{dbr/Maroon\_clownfish}.
+	Riportiamo nella seguente tabella i risultati della ricerca semantica per il nodo \texttt{14545} utilizzando solo le propriet\`a FAO.\\\\
 	\begin{tabular}{|c|c|c|c|}
-	\hline
-	
+	\hline	
 	\textbf{\# Risultato} & \textbf{ID} & \textbf{HR comuni} & \textbf{Similarità} \\ \hline
 	1                    & 10112        & 4                           & 1.00              \\ \hline
 	2                    & 11407       & 4                           & 1.00                \\ \hline
@@ -713,8 +735,9 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	...                   &  ...      &       ...                   &      ...           \\ \hline
 	40                    & 11394       & 4                           & 1.00                \\ \hline
 	\end{tabular}\\\\
-	I primi risultati sono 40 nodi, tutti con 4 Higher Rank in comune col nodo \texttt{14545} e tutti con similarit\`a massima. La similarit\`a \`e massima perch\`e questi nodi hanno la stessa tassonomia del nodo \texttt{14545} ed utilizzando solo queste propriet\`a risultano identici al nodo di riferimento.\\\\Introduciamo ora la terza propriet\`a.\\
-	Ricerca semantica per il nodo \texttt{14545} utilizzando tutte le propriet\`a :\\\\
+	I primi risultati sono 40 nodi, tutti con 4 Higher Rank in comune col nodo \texttt{14545} e tutti con similarit\`a massima. La similarit\`a \`e massima perch\`e questi nodi hanno la stessa posizione nella tassonomia del nodo \texttt{14545} ed utilizzando solo queste propriet\`a risultano identici al nodo di riferimento.
+	
+	Introduciamo ora la terza propriet\`a e mostriamo nella tabella seguente i risultati della ricerca semantica per il nodo \texttt{14545} utilizzando le tre proprietà.\\\\
 	\begin{tabular}{|c|c|c|c|}
 	\hline
 	
@@ -745,7 +768,7 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	\item \texttt{dbc:Fish\_of\_the\_Pacific\_Ocean}
 	\item \texttt{dbc:Fly\_fishing\_target\_species}
 	\end{itemize}
-	Risultati della ricerca semantica:\\\\
+	Nella seguente tabella sono riportati i risultati della ricerca semantica.\\\\
 	\begin{tabular}{|c|c|c|c|}
 	\hline
 	
@@ -755,7 +778,7 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	3                    & 2931      & 9                          &          0.83    \\ \hline
 	
 	\end{tabular}\\\\
-	Come possiamo vedere dalla tabella, il secondo risultato ha un Higher Rank in comune in meno rispetto al terzo, ciò nonostante la similarità è maggiore. Questo è dovuto al fatto che il nodo \texttt{2116} condivide con il nodo di riferimento 9 categorie, mentre il nodo \texttt{2931} solo 5. Di seguito i dettagli delle risorse DBpedia di questi due nodi.
+	Come possiamo vedere, il secondo risultato ha un Higher Rank in comune in meno rispetto al terzo, ciò nonostante la similarità è maggiore. Questo è dovuto al fatto che il nodo \texttt{2116} condivide con il nodo di riferimento 9 categorie, mentre il nodo \texttt{2931} solo 5. Di seguito i dettagli delle risorse DBpedia di questi due nodi.
 	\begin{itemize}
 		\item Nodo \texttt{2116}\\
 		uri DBpedia: \texttt{dbr/Pink\_salmon}\\
@@ -787,8 +810,9 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	In questo test si vuole dimostrare come la ricerca basata su proprietà semantiche fornisca dei risultati migliori di quelli ottenibili con una ricerca basata semplicemente sulla sintassi. In una ricerca di questo tipo vengono mostrati i nodi i cui nomi corrispondono maggiormente ad una stringa scelta dall'utente come chiave della ricerca.
 	Con questo primitivo approccio non verranno visualizzati i nodi simili ma con nomi dissimili.
 	\paragraph{Esempio}
-	Si tratta di due ricerche fondamentalmente diverse, in quanto la ricerca sintattica prevede la definizione di una stringa, mentre la ricerca semantica la selezione di un nodo della tassonomia. Per confrontare i risultati si è proceduto nel seguente modo. 
-	\\\\Consideriamo il nodo \texttt{2933}, uri DBpedia: \texttt{dbr/Chinook\_salmon}.
+	Si tratta di due ricerche fondamentalmente diverse, in quanto la ricerca sintattica prevede la definizione di una stringa, mentre la ricerca semantica la selezione di un nodo della tassonomia. Per confrontare i risultati si è proceduto nel modo descritto di seguito. 
+	\newpage
+	Consideriamo il nodo \texttt{2933}, uri DBpedia: \texttt{dbr/Chinook\_salmon}.
 	Ad esso sono associati i seguenti nomi (consideriamo i nomi inglesi):
 	\begin{itemize}
 		\item Oncorhynchus tshawytscha
@@ -808,7 +832,7 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	5 & 15758 & Trachinotus mookalee, Indian pompano & 0.04 \\ \hline
 	\end{tabular}\\\\
 	
-	Eseguiamo ora la ricerca semantica rispetto al nodo \texttt{2933}:\\\\
+	Nella tabella seguente invece, riportiamo i risultati della ricerca semantica rispetto al nodo \texttt{2933}:\\\\
 	\begin{tabular}{|c|c|c|c|}
 	\hline
 	
@@ -829,9 +853,10 @@ Sono stati sviluppate due tipologie di ricerca: la \textit{Ricerca per nome} e l
 	
 	Il terzo test mostra come questa tecnica consente di superare i limiti imposti da una ricerca sintattica basata esclusivamente sui nomi, dimostrando di essere in grado di riconoscere la similarità tra due specie anche se con nomi completamente dissimili.
 \chapter{Implementazione}
-In questo capitolo vengono descritti i dettagli implementativi di RFT, dividendo la trattazione in Back End e Front End. Vengono descritte nel dettaglio le tecnologie utilizzate maggiormente rilevanti.
+Il prototipo si compone di due fronti: il back-end che è responsabile dell'elaborazione dei dati e il front-end che gestisce l'interazione con l'utente.
+In questo capitolo vengono descritti i dettagli implementativi delle due parti che realizzano RFT. Vengono descritte nel dettaglio le tecnologie utilizzate maggiormente rilevanti.
 \section{Back End}
-Il back end del sistema RFT è rappresentato da un Web Service, realizzato secondo l'architettura REST. Il Web Service mette a disposizione delle API per accedere alle operazioni sulle risorse RESTful. Esso si appoggia sull'indice delle specie e su un database mySQL.
+Il back-end di RFT è costituito da un Web Service, realizzato secondo l'architettura REST. Il Web Service mette a disposizione delle API per accedere alle operazioni sulle risorse RESTful. Esso si appoggia sull'indice delle specie e su un database MySQL.
 \subsection{Architettura REST}
 REpresentational State Transfer (REST) è un'architettura software che definisce dei vincoli da applicare al design dei componenti in un sistema distribuito di ipermedia.
 
@@ -850,7 +875,7 @@ Come nel World Wide Web, i client possono fare caching delle risposte. Le rispos
 \item \textbf{Layered system}\\
 Un client non può dire se è connesso direttamente ad un server di livello più basso od intermedio, i server intermedi possono migliorare la scalabilità del sistema con load-balancing o con cache distribuite. Layer intermedi possono offrire inoltre politiche di sicurezza
 \item \textbf{Code on demand} (opzionale)\\
-I server possono temporaneamente estendere o personalizzare le funzionalità del client trasferendo del codice eseguibile. Ad esempio questo può includere componenti compilati come Applet Java o linguaggi di scripting client side come JavaScript. "Code on demand" è l'unico vincolo opzionale per la definizione di un'architettura REST.
+I server possono temporaneamente estendere o personalizzare le funzionalità del client trasferendo del codice eseguibile. Ad esempio questo può includere componenti compilati come Applet Java o linguaggi di scripting client side come JavaScript. Questo è l'unico vincolo opzionale per la definizione di un'architettura REST.
 
 \item \textbf{Uniform interface} Un'interfaccia di comunicazione omogenea tra client e server permette di semplificare e disaccoppiare l'architettura, la quale si può evolvere separatamente. I quattro vincoli per l'uniformità dell'interfaccia sono:
 	\begin{itemize}
@@ -879,7 +904,7 @@ La strutturazione a livelli consente agli intermediari, come proxy, gateway e fi
 \paragraph{Risorse}
 Un concetto importante in REST è l'esistenza di risorse (fonti di informazioni), a cui si può accedere tramite un identificatore globale (un URI). Per utilizzare le risorse, le componenti di una rete (componenti client e server) comunicano attraverso una interfaccia standard (ad es. HTTP) e si scambiano rappresentazioni di queste risorse (il documento che trasmette le informazioni). Ad esempio, una risorsa cerchio potrebbe accettare e restituire una rappresentazione che specifica un punto per il centro e il raggio, formattati nel formato SVG, ma potrebbe anche accettare e restituire una rappresentazione che specifica tre punti distinti qualsiasi lungo la circonferenza nel formato CSV.
 
-Un numero qualsiasi di connettori (client, server, cache, tunnel ecc.) può mediare la richiesta, ma ogni connettore interviene senza conoscere la ?storia passata? delle altre richieste. Di conseguenza una applicazione può interagire con una risorsa conoscendo due cose: l'identificatore della risorsa e l'azione richiesta - non ha bisogno di sapere se ci sono proxy, gateway, firewalls, tunnel, ecc tra essa e il server su cui è presente l'informazione cercata. L'applicazione comunque deve conoscere il formato dell'informazione (rappresentazione) restituita, tipicamente un documento HTML, XML o JSON, ma potrebbe essere anche un'immagine o qualsiasi altro contenuto.
+Un numero qualsiasi di connettori (client, server, cache, tunnel ecc.) può mediare la richiesta, ma ogni connettore interviene senza conoscere la storia passata delle altre richieste. Di conseguenza una applicazione può interagire con una risorsa conoscendo due cose: l'identificatore della risorsa e l'azione richiesta - non ha bisogno di sapere se ci sono proxy, gateway, firewalls o tunnel tra essa e il server su cui è presente l'informazione cercata. L'applicazione comunque deve conoscere il formato dell'informazione (rappresentazione) restituita, tipicamente un documento HTML, XML o JSON, ma potrebbe essere anche un'immagine o qualsiasi altro contenuto.
 \subsection{JAX-RS}
 Per l'implementazione di RFT come sistema RESTful è stata utilizzata la libreria JAX-RS (Java API for RESTful Web Services) . \`E stata introdotta in Java SE 5, per semplificare le fasi di sviluppo e pubblicazione di Web Service secondo l'architettura REST. A partire dalla versione 1.1, JAX-RS è componente ufficiale di Java EE. Esistono diverse implementazioni di JAX-RS, nel caso di studio è stato utilizzato il framework Jersey.
 
@@ -1052,7 +1077,7 @@ Ad esempio, se il client utilizza `\texttt{nicolo}' come username e `\texttt{pas
 \texttt{Authorization: Basic bmljb2xvOnBhc3N3b3JkMTIzNA==}
 \subsection{Esempi di richieste}
 Seguono due brevi esempi di richieste alle API fornite dal sistema RESTful. Riportiamo una schematizzazione delle richieste HTTP con il body (se presente) e delle risposte. Il campo \texttt{Host} è l'indirizzo target delle richieste.
-\paragraph{Richiesta degli Stand Product di un Flash Stand}
+\subsubsection{Richiesta degli Stand Product di un Flash Stand}
 Supponiamo di voler ottenere tutti gli \textit{Stand Product} associati al \textit{Flash Stand} con id \texttt{17}. La richiesta HTTP sarà:
 \begin{verbatim}
 GET /RealFoodTradeWS/api/flashstands/17/standproducts HTTP/1.1
@@ -1088,7 +1113,7 @@ Content-Type: application/json
   "errorMessage": "There are not Flash Product for Flash Stand with id 18"
 }
 \end{verbatim}
-\paragraph{Creazione di un Flash Stand} Per poter creare un \textit{Flash Stand} l'utente deve essere autenticato come \textit{Seller}, per questo bisogna specificare correttamente l'header \texttt{Authorization}. Nel body andrà rappresentato il \textit{Flash Stand} da aggiungere, il quale è caratterizzato dalle coordinate geografiche.
+\subsubsection{Creazione di un Flash Stand} Per poter creare un \textit{Flash Stand} l'utente deve essere autenticato come \textit{Seller}, per questo bisogna specificare correttamente l'header \texttt{Authorization}. Nel body andrà rappresentato il \textit{Flash Stand} da aggiungere, il quale è caratterizzato dalle coordinate geografiche.
 \begin{verbatim}
 POST /RealFoodTradeWS/api/flashstands HTTP/1.1
 Host: localhost:8080
@@ -1113,20 +1138,76 @@ Nel caso di impossibilità nel creare la risorsa desiderata, viene tornata una ri
 	\item Header Authorization non corretto
 \end{itemize}
 \section{Front End}
+Il front-end di RFT è un applicativo Web realizzato in HTML e JavaScript. Ai fini del lavoro di tesi non interessa entrare nei dettagli implementativi del front-end in questione, ma ci occuperemo della descrizione dell'interfaccia. In particolare mostreremo il comportamento dell'interfaccia utente per le funzionalità di ricerca implementate.
+\subsection{Ricerca per nome}
+Il sistema mostra un form per la ricerca delle specie ittiche tramite nome. 
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{screen_1}
+	\caption{Form per la ricerca}
+	\label{}
+\end{figure}
+Ipotizziamo di essere interessati ad effettuare una ricerca tramite la parola ``sturgeon'' in lingua inglese. Per prima cosa dobbiamo selezionare la lingua utente tramite la tendina. Come possiamo vedere in Figura \ref{s2} vengono mostrate tutte le lingue per le quali esiste almeno un nome nell'indice.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.3\textwidth]{screen_2}
+	\caption{Tendina per la selezione della lingua}
+	\label{s2}
+\end{figure}
+Una volta selezionata la lingua, l'utente scriverà la stringa desiderata e dopo aver cliccato il bottone \textit{SEARCH} il sistema mosterà i risultati più rilevanti, così come mostrato in Figura \ref{s3}.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{screen_3}
+	\caption{Visualizzazione dei risultati}
+	\label{s3}
+\end{figure}
+Cliccando sul link \textit{more results...} vengono mostrati altri risultati, ovviamente con minore rilevanza rispetto a quelli già visualizzati.
+\subsection{Ricerca per similarità}
+La ricerca per similarità viene sfruttata dal sistema durante la ricerca dei \textit{Flash Stand}.
+Una volta ottenuto i risultati della ricerca per nome, l'utente può selezionare una specie, tramite il link \textit{select} visibile in Figura \ref{s3}. Il sistema mostrerà i \textit{Flash Stand} nei quali vengono venduti \textit{Stand Product} che fanno riferimento alla specie selezionata. Inoltre il sistema mostrerà anche l'elenco dei pesci, con relativi \textit{Flash Stand}, più simili a quella specie. 
 
+Nelle Figure \ref{s4} e \ref{s5} possiamo vedere i risultati della ricerca semantica supponendo di aver selezionato il primo risultato da quelli presenti in Figura \ref{s3}. Nel prototipo, gli unici dettagli gestiti sono: la posizione geografica per i \textit{Flash Stand} ed il prezzo per gli \textit{Stand Product}.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{screen_4}
+	\caption{Visualizzazione dei Flash Stand per la specie selezionata}
+	\label{s4}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth]{screen_5}
+	\caption{Visualizzazione dei Flash Stand per le specie simili a quella selezionata}
+	\label{s5}
+\end{figure}
 \chapter{Sviluppi Futuri}
 Proponiamo delle possibili estensioni dell'applicativo sviluppato.
-Essendo il sistema in questione un prototipo, gli sviluppi futuri naturali saranno costituiti dall'implementazione delle funzionalità necessarie a soddisfare i requisiti definiti per il sistema completo.
-\section{Ricerche geografiche}
-
+Essendo il sistema in questione un prototipo, gli sviluppi futuri naturali saranno costituiti dall'implementazione delle specifiche definite per il sistema finale.
 \section{Gestione degli ordini}
+Nella realizzazione del prototipo sono state implementate le funzionalità minime necessarie all'introduzione delle ricerche semantiche. Tra le funzionalità non presenti, ricopre un ruolo fondamentale la gestione degli ordini. Il prototipo infatti consente solo la gestione e la ricerca dei \textit{Flash Stand}, ma in un utilizzo reale i clienti dovranno avere la possibilità di ordinare i prodotti ricercati e vi dovranno essere tutte le funzionalità necessarie alla gestione di tali ordini. I clienti potranno vedere gli ordini in corso e lo storico, mentre i venditori potranno vedere gli ordini pendenti per i \textit{Flash Stand} attivi, cambiarne lo stato e visionare lo storico.
 
+In una prima fase si può pensare di non introdurre un metodo di pagamento elettronico, limitando la responsabilità di RFT alla gestione degli incontri venditore-cliente.
+\section{Applicazione mobile}
+La struttura del prototipo è costituita dai due fronti back-end e front-end a garanzia dell'indipendenza dei dati dalla loro rappresentazione. Grazie a tale fatto sarà possibile realizzare più front-end basati sullo stesso Web service, per esempio diversificandoli per tipo di utenza.Data la natura di RFT il front-end definitivo dovrebbe essere un'applicazione mobile che garantisce ai pescatori di interagire col sistema anche quando si trovano in mare aperto.
+
+L'utilizzo di dispositivi mobili consentono di sfruttare i dati relativi alla posizione dell'utente. Ecco un esempio di alcune possibilità:
+\begin{itemize}
+	\item Il pescatore può inserire la posizione esatta della raccolta di un prodotto, fornendo così maggiori dettagli al compratore;
+	\item Nel mostrare i risultati di una ricerca, il sistema  \textit{Flash Stand} nelle vicinanze dell'utente richiedente.
+\end{itemize}
 \section{Integrazione col Deep Web}
+Uno dei vantaggi economici di RFT è la possibilità data ai produttori di aumentare i margini di guadagno, dovuto all'eliminazione degli intermediari grazie alla vendita diretta con il consumatore finale.
+In questo nuovo scenario la decisione della scelta del prezzo di vendita spetta al produttore. In alcuni contesti si tratta di una novità che può nascondere anche aspetti negativi. Un produttore che fino all'introduzione di RFT ha sempre accettato il prezzo deciso dal grossista, molto probabilmente non conosce il prezzo al dettaglio del proprio prodotto o il prezzo di acquisto di altri grossisti in mercati simili. Questo significa che non ha le conoscenze necessarie per decidere il prezzo di vendita nei propri \textit{Flash Stand}.
 
-\section{OAuth}
+Per ovviare a questo problema si potrebbe mostrare al venditore un prezzo di mercato (o più prezzi) al momento di inserire un nuovo prodotto. Questi suggerimenti potranno provenire da più fonti, in particolare si tenga conto del Deep Web, ovvero i contenuti nascosti dietro i form HTML non direttamente accessibili ai motori di ricerca.
 
 \section{Estensione generale}
-Le funzionalità proposte da RFT possono risultare positive anche in contesti diversi da quelli del mercato ittico. Una prima generalizzazione può essere quella di utilizzare questo sistema in altri mercati alimentari. Se per esempio consideriamo il settore agricolo
+Le funzionalità proposte da RFT possono risultare positive anche in contesti diversi da quelli del mercato ittico. Una prima generalizzazione può essere quella di utilizzare questo sistema in altri mercati alimentari. Un esempio può essere costituito dal caso del mercato agricolo. Pensando ad un'ulteriore generalizzazione, RFT può costituire la base per un sistema di vendita diretta anche al di fuori del contesto alimentare.
+
+Per poter realizzare le tecniche di ricerche semantiche si rendono necessarie delle fonti Linked Data da cui estrarre le informazioni utili alla ricerca. L'estensione ad un nuovo mercato quindi, è limitato alla presenza di dataset in grado di fornire informazioni rilevanti a questi scopi.
+
+
 %
 % ---- Bibliography ----
 %
